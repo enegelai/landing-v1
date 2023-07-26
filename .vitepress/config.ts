@@ -8,7 +8,6 @@ const links: any[] = [];
 export default defineConfig({
   title: 'CX',
   description: 'AI Powered Continuous CX Testing on a Massive Scale',
-  base: '/landing-v1/',
   srcDir: '.',
   srcExclude: ['**/README.md', '**/TODO.md'],
   outDir: './dist',
