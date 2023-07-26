@@ -84,7 +84,7 @@
           </div>
         </div>
         <div class="sm:col-span-2">
-          <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number (oiptional)</label>
+          <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Phone number (optional)</label>
           <div class="relative mt-2.5">
             <input
               v-model="phone"

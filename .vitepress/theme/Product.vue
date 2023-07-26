@@ -102,83 +102,75 @@ import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/vue/
 
 <template>
     <PageHeader></PageHeader>
-    <div class="bg-gray-900 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div id="conversation-intelligence-dashboard" class="mx-auto max-w-2xl lg:text-center">
-          <h2 class="text-base font-semibold leading-7 text-indigo-400">Empower your agents</h2>
-          <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Conversation Intelligence Dashboard</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-300">a cutting-edge solution designed to streamline call center operations and enhance agent performance. Leveraging the power of AI, the Conversation Intelligence Dashboard simplifies call summarization, facilitates KPI calculation, and identifies agent strengths and weaknesses based on conversation transcripts.</p>
-        </div>
-        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            <div v-for="feature in features" :key="feature.name" class="flex flex-col">
-              <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                <component :is="feature.icon" class="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" />
-                {{ feature.name }}
-              </dt>
-              <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                <p class="flex-auto">{{ feature.description }}</p>
-                <p class="mt-6">
-                  <a :href="feature.href" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
-                </p>
-              </dd>
-            </div>
-          </dl>
-        </div>
+    <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Empower your agents</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conversation Intelligence Dashboard</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">a cutting-edge solution designed to streamline call center operations and enhance agent performance. Leveraging the power of AI, the Conversation Intelligence Dashboard simplifies call summarization, facilitates KPI calculation, and identifies agent strengths and weaknesses based on conversation transcripts.</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div v-for="feature in features" :key="feature.name" class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              {{ feature.name }}
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">{{ feature.description }}</dd>
+          </div>
+        </dl>
       </div>
     </div>
+  </div>
 
-    <div class="bg-gray-900 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div id="personal-coach" class="mx-auto max-w-2xl lg:text-center">
-          <h2 class="text-base font-semibold leading-7 text-indigo-400">Empower your agents</h2>
-          <h1 class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Personal Coach</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-300">Personal Coach utilizes advanced Generative AI technology, designed to analyze, optimize, and track agent performance over time. This intelligent tool is uniquely positioned to elevate your contact center's productivity, quality, and effectiveness by providing personalized performance improvement recommendations to your agents.</p>
-        </div>
-        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            <div v-for="feature in features2" :key="feature.name" class="flex flex-col">
-              <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                <component :is="feature.icon" class="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" />
-                {{ feature.name }}
-              </dt>
-              <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                <p class="flex-auto">{{ feature.description }}</p>
-                <p class="mt-6">
-                  <a :href="feature.href" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
-                </p>
-              </dd>
-            </div>
-          </dl>
-        </div>
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Empower your agents</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Personal Coach</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">Personal Coach utilizes advanced Generative AI technology, designed to analyze, optimize, and track agent performance over time. This intelligent tool is uniquely positioned to elevate your contact center's productivity, quality, and effectiveness by providing personalized performance improvement recommendations to your agents.</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div v-for="feature in features" :key="feature.name" class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              {{ feature.name }}
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">{{ feature.description }}</dd>
+          </div>
+        </dl>
       </div>
     </div>
+  </div>
 
-    <div class="bg-gray-900 py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div id="bot-tester" class="mx-auto max-w-2xl lg:text-center">
-          <h2 class="text-base font-semibold leading-7 text-indigo-400">Test your voicebots or chatbots</h2>
-          <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Bot Tester</p>
-          <p class="mt-6 text-lg leading-8 text-gray-300">The Enegel Bot Tester is a cutting-edge solution for evaluating and enhancing the performance of your voicebots and chatbots. Using user-defined business objectives, our tool actively engages with your bots, providing detailed assessments of their effectiveness and the overall customer experience.</p>
-        </div>
-        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-          <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-            <div v-for="feature in features3" :key="feature.name" class="flex flex-col">
-              <dt class="flex items-center gap-x-3 text-base font-semibold leading-7 text-white">
-                <component :is="feature.icon" class="h-5 w-5 flex-none text-indigo-400" aria-hidden="true" />
-                {{ feature.name }}
-              </dt>
-              <dd class="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-300">
-                <p class="flex-auto">{{ feature.description }}</p>
-                <p class="mt-6">
-                  <a :href="feature.href" class="text-sm font-semibold leading-6 text-indigo-400">Learn more <span aria-hidden="true">→</span></a>
-                </p>
-              </dd>
-            </div>
-          </dl>
-        </div>
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Test your voicebots or chatbots</h2>
+        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Bot Tester</p>
+        <p class="mt-6 text-lg leading-8 text-gray-600">The Enegel Bot Tester is a cutting-edge solution for evaluating and enhancing the performance of your voicebots and chatbots. Using user-defined business objectives, our tool actively engages with your bots, providing detailed assessments of their effectiveness and the overall customer experience.</p>
+      </div>
+      <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+        <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+          <div v-for="feature in features" :key="feature.name" class="relative pl-16">
+            <dt class="text-base font-semibold leading-7 text-gray-900">
+              <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                <component :is="feature.icon" class="h-6 w-6 text-white" aria-hidden="true" />
+              </div>
+              {{ feature.name }}
+            </dt>
+            <dd class="mt-2 text-base leading-7 text-gray-600">{{ feature.description }}</dd>
+          </div>
+        </dl>
       </div>
     </div>
-    <PageFooter></PageFooter>
+  </div>
+   
+  <PageFooter></PageFooter>
   </template>
 
