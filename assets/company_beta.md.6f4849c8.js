@@ -1,4 +1,4 @@
-import{g as o,o as g,c as p,b as e,w as a,v as n,a as _,f as v}from"./chunks/framework.7c1acdda.js";const b={key:0,class:"isolate bg-white px-6 py-24 sm:py-32 lg:px-8"},h=_(`<div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true"><div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path:polygon(
+import{g as o,o as g,c as p,b as e,w as a,v as n,a as _,f as v}from"./chunks/framework.e87f8c8a.js";const b={key:0,class:"isolate bg-white px-6 py-24 sm:py-32 lg:px-8"},h=_(`<div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]" aria-hidden="true"><div class="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]" style="clip-path:polygon(
             74.1% 44.1%,
             100% 61.6%,
             97.5% 26.9%,
