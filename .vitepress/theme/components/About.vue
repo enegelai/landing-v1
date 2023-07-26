@@ -65,7 +65,7 @@ const people = [
     name: 'Luke Derrin',
     role: 'CMO',
     imageUrl: '/img/Luke Derrin Pic.png',
-    location: 'Former Big Wave Surfer',
+    location: '20 years of management within CX',
     linkedinUrl: 'https://www.linkedin.com/in/lukederrin/'
   }
 ];
