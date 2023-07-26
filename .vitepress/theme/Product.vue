@@ -159,7 +159,7 @@ import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/vue/
         <div id="bot-tester" class="mx-auto max-w-2xl lg:text-center">
           <h2 class="text-base font-semibold leading-7 text-indigo-400">Test your voicebots or chatbots</h2>
           <p class="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Bot Tester</p>
-          <p class="mt-6 text-lg leading-8 text-gray-300">The Engel Bot Tester is a cutting-edge solution for evaluating and enhancing the performance of your voicebots and chatbots. Using user-defined business objectives, our tool actively engages with your bots, providing detailed assessments of their effectiveness and the overall customer experience.</p>
+          <p class="mt-6 text-lg leading-8 text-gray-300">The Enegel Bot Tester is a cutting-edge solution for evaluating and enhancing the performance of your voicebots and chatbots. Using user-defined business objectives, our tool actively engages with your bots, providing detailed assessments of their effectiveness and the overall customer experience.</p>
         </div>
         <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">

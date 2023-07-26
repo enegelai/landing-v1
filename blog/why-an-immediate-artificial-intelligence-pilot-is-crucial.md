@@ -1,6 +1,6 @@
 ---
 title: "Seizing the AI Opportunity: Why an Immediate Artificial Intelligence Pilot is Crucial"
-date: 2023-01-01
+date: 2023-01-05
 author: enegel
 twitter: '@enegel'
 ---

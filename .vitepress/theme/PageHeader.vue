@@ -130,7 +130,7 @@ const products = [
     href: '/product/#personal-coach',
     icon: CursorArrowRaysIcon
   },
-  { name: 'Bot Tester', description: 'The Engel Bot Tester is a cutting-edge solution for evaluating and enhancing the performance of your Voice Bots and Chat Bots.', href: '/product/#bot-tester', icon: CheckCircleIcon }
+  { name: 'Bot Tester', description: 'The Enegel Bot Tester is a cutting-edge solution for evaluating and enhancing the performance of your Voice Bots and Chat Bots.', href: '/product/#bot-tester', icon: CheckCircleIcon }
 ];
 const callsToAction = [
   { name: 'Learn More', href: '/product/', icon: InformationCircleIcon, class: 'bg-gray-50 text-gray-900 hover:bg-gray-100' },

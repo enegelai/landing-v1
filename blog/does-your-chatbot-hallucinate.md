@@ -1,6 +1,6 @@
 ---
 title: "Does your chatbot hallucinate? Evaluating Generative AI Chatbots: The Crucial Role and Process of Testing"
-date: 2023-03-01
+date: 2023-03-05
 author: enegel
 twitter: '@enegel'
 ---

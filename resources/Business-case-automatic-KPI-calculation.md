@@ -1,6 +1,6 @@
 ---
 title: "Leveraging Automation for Key Performance Indicator (KPI) Calculation in Contact Centers"
-date: 2023-01-01
+date: 2023-01-10
 author: enegel
 twitter: '@enegel'
 ---

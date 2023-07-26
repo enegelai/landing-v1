@@ -1,6 +1,6 @@
 ---
 title: "Embracing Generative AI in Chatbots: Maximizing Potential, Mitigating Risks"
-date: 2023-05-01
+date: 2023-05-02
 author: enegel
 twitter: '@enegel'
 ---
