@@ -105,7 +105,7 @@ import { DocumentTextIcon, ChartBarIcon, ChartPieIcon, ArrowPathIcon, CheckIcon,
     <div class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div id="conversation-intelligence-dashboard" class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-base font-semibold leading-7 text-indigo-600">Empower your agents</h2>
+        <h2 class="text-base font-semibold leading-7 text-indigo-600">Get informed</h2>
         <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conversation Intelligence Dashboard</p>
         <p class="mt-6 text-lg leading-8 text-gray-600">A cutting-edge solution designed to streamline call center operations and enhance agent performance. Leveraging the power of AI, the Conversation Intelligence Dashboard simplifies call summarization, facilitates KPI calculation, and identifies agent strengths and weaknesses based on conversation transcripts.</p>
       </div>
