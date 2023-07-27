@@ -85,7 +85,7 @@ const navigation = {
   legal: [
     //{ name: 'Claim', href: '#' },
     //{ name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
+    { name: 'Terms Of Use', href: '/company/termsofuse' },
   ],
   social: [
     /*
@@ -118,6 +118,7 @@ const navigation = {
       }),
     },
     */
+   /*
     {
       name: 'Twitter',
       href: '#',
@@ -129,7 +130,7 @@ const navigation = {
             }),
           ]),
       }),
-    },
+    }, */
     /*
     {
       name: 'GitHub',
