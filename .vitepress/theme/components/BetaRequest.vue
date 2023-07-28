@@ -130,8 +130,6 @@
 
 <script setup>
 import { ref } from 'vue';
-import { ChevronDownIcon } from '@heroicons/vue/20/solid';
-import { Switch, SwitchGroup, SwitchLabel } from '@headlessui/vue';
 
 const firstName = ref('');
 const lastName = ref('');
