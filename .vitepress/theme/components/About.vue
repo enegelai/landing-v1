@@ -54,6 +54,13 @@ const people = [
     imageUrl: '/img/Luke Derrin Pic.png',
     location: '20 years of management within CX',
     linkedinUrl: 'https://www.linkedin.com/in/lukederrin/'
+  },
+  {
+    name: 'Nadia Pekarnikova',
+    role: 'Legal',
+    imageUrl: '/img/Nadia P Pic.png',
+    location: 'Ethical and compliant use of AI',
+    linkedinUrl: 'https://www.linkedin.com/in/lukederrin/'
   }  
 ];
 </script>
