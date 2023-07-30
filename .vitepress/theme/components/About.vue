@@ -60,7 +60,7 @@ const people = [
     role: 'Legal',
     imageUrl: '/img/Nadia P Pic.png',
     location: 'Ethical and compliant use of AI',
-    linkedinUrl: 'https://www.linkedin.com/in/lukederrin/'
+    linkedinUrl: 'https://www.linkedin.com/in/nadia-p-192b87174/'
   }  
 ];
 </script>
