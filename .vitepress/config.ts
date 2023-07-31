@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, HeadConfig } from 'vitepress';
 import { createWriteStream } from 'node:fs';
 import path from 'node:path';
 import { SitemapStream } from 'sitemap';
@@ -7,7 +7,7 @@ const links: any[] = [];
 
 export default defineConfig({
   title: 'CX',
-  description: 'AI Powered Continuous CX Testing on a Massive Scale',
+  description: 'AI Powered Continuous CX Improvement',
   srcDir: '.',
   srcExclude: ['**/README.md', '**/TODO.md'],
   outDir: './dist',
@@ -64,5 +64,33 @@ export default defineConfig({
     links.forEach((link) => sitemap.write(link));
     sitemap.end();
     await new Promise((r) => writeStream.on('finish', r));
+  },
+  transformHead: ({page, pageData})=>{
+    //console.log(`transformHead: ${JSON.stringify(page)}`);
+
+    const head: HeadConfig[] = []
+
+    // Generate canonical link
+    //<link rel="canonical" href="https://example.com/dresses/green-dresses" />
+    const base = 'https://www.enegel.ai';
+    const u = page.replace('index.md','').replace('.md','').trim();
+    let cu = base;
+    if(u.length>0){
+      cu += '/' + u;
+    }
+    console.log(`transformHead: ${JSON.stringify(page)} => canonical: ${cu}`);
+
+    head.push(['link', {rel: 'canonical', href: cu}]);
+
+    if(pageData?.frontmatter?.title) {
+      head.push(['meta', {property: 'og:title', content: pageData.frontmatter.title}])
+    }
+
+    if(pageData?.frontmatter?.description) {
+      head.push(['meta', {property: 'og:description', content: pageData.frontmatter.description}])
+    }
+
+    return head
+
   }
 });
