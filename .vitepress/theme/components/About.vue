@@ -56,6 +56,13 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com/in/lukederrin/'
   },
   {
+    name: 'Maria Prepbrazhenskaya',
+    role: 'Customer Success',
+    imageUrl: '/img/Maria P Pic.png',
+    location: '23 years in Customer Care',
+    linkedinUrl: 'https://www.linkedin.com/in/maria-preobrazhenskaya-b55332164/'
+  },
+  {
     name: 'Nadia Pekarnikova',
     role: 'Legal',
     imageUrl: '/img/Nadia P Pic.png',
