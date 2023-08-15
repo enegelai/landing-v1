@@ -49,6 +49,13 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com/in/slavasayko/'
   },
   {
+    name: 'Tod Famous',
+    role: 'Chief Product Officer',
+    imageUrl: '/img/Tod Famous Pic.png',
+    location: '25 years in CX product',
+    linkedinUrl: 'https://www.linkedin.com/in/tfamous/'
+  },  
+  {
     name: 'Luke Derrin',
     role: 'CMO',
     imageUrl: '/img/Luke Derrin Pic.png',
