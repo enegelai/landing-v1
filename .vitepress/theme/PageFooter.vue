@@ -70,7 +70,7 @@ const navigation = {
     { name: 'Bot Tester', href: '/product/#bot-tester' },
   ],
   support: [
-    { name: 'Pricing', href: '#' },
+    { name: 'Pricing', href: '/company/pricing' },
     //{ name: 'Documentation', href: '#' },
     //{ name: 'Guides', href: '#' },
     //{ name: 'API Status', href: '#' },
