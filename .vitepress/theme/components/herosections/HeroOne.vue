@@ -15,6 +15,13 @@
           </p>
           <div class="mt-20 flex items-center justify-center gap-x-6">
             <a
+              href="/company/tryit"
+              class="flex items-center rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
+            >
+              <CursorArrowRaysIcon class="h-6 w-6 flex-none" aria-hidden="true" />
+              Try it Now!
+            </a>
+            <a
               href="/company/beta"
               class="flex items-center rounded-md bg-orange-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-orange-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
             >
