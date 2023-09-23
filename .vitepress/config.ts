@@ -44,6 +44,12 @@ export default defineConfig({
         src: 'https://www.googletagmanager.com/gtag/js?id=G-9YYSL8KCZV'
       }
     ],
+    [
+      'script',
+      {
+        src: '//js.hsforms.net/forms/embed/v2.js'
+      }
+    ],
     ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-9YYSL8KCZV');"]
   ],
   transformHtml: (_, id, { pageData }) => {
