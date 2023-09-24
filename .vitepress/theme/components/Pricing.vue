@@ -19,7 +19,7 @@
               </RadioGroupOption>
             </RadioGroup>
           </div>
-          <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:mx-0 xl:max-w-none xl:grid-cols-4">
+          <div class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 md:max-w-2xl md:grid-cols-2 lg:max-w-4xl xl:mx-0 xl:max-w-none">
             <div v-for="tier in pricing.tiers" :key="tier.id" :class="[tier.mostPopular ? 'ring-2 ring-indigo-600' : 'ring-1 ring-gray-200', 'rounded-3xl p-8']">
               <h2 :id="tier.id" :class="[tier.mostPopular ? 'text-indigo-600' : 'text-gray-900', 'text-lg font-semibold leading-8']">{{ tier.name }}</h2>
               <p class="mt-4 text-sm leading-6 text-gray-600">{{ tier.description }}</p>
@@ -144,10 +144,12 @@
       {
         name: 'Pay as you go',
         id: 'tier-startup',
-        href: 'https://checkout.stripe.com/c/pay/cs_test_a1NZksJmtH4mdfNo0mZclNZ9zDX2kuwYMJB6WmNM26PyLD7VXaElTxvBcZ#fidkdWxOYHwnPyd1blpxYHZxWjA0SzYwSFxNR05UZkN%2FQVZ%2FNWpQV39obl9SQ1RLXTM9c1BPZkZKTDRURnJUZD1CM2dsbElsMEpDS1NtbWNBbGtGPG5ScTwwbmI1UmJdXGA8amR8MXB0amZCNTVNM2x3d0ZIRCcpJ3VpbGtuQH11anZgYUxhJz8ncWB2cVowbkQycFFhYz1kTWIwalxgUFAneCUl',
+        //href: 'https://checkout.stripe.com/c/pay/cs_test_a1NZksJmtH4mdfNo0mZclNZ9zDX2kuwYMJB6WmNM26PyLD7VXaElTxvBcZ#fidkdWxOYHwnPyd1blpxYHZxWjA0SzYwSFxNR05UZkN%2FQVZ%2FNWpQV39obl9SQ1RLXTM9c1BPZkZKTDRURnJUZD1CM2dsbElsMEpDS1NtbWNBbGtGPG5ScTwwbmI1UmJdXGA8amR8MXB0amZCNTVNM2x3d0ZIRCcpJ3VpbGtuQH11anZgYUxhJz8ncWB2cVowbkQycFFhYz1kTWIwalxgUFAneCUl',
+        href: 'mailto:info@enegel.com',
         price: { monthly: '$99', annually: '$999' },
         description: 'A plan that scales with your rapidly growing business.',
-        button: "Buy plan",
+        //button: "Buy plan",
+        button: "Contact sales",
         features: [
           'Summarization', 
           'KPIs',
@@ -165,8 +167,8 @@
       {
         name: 'Enterprise',
         id: 'tier-enterprise',
-        href: '#',
-        price: { monthly: 'TBD', annually: 'TBD' },
+        href: 'mailto:info@enegel.com',
+        price: { monthly: 'Contact us', annually: 'Contact us' },
         description: 'Dedicated support and infrastructure for your company.',
         button: "Contact sales",
         features: [

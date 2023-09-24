@@ -1,6 +1,6 @@
 ---
-title: About Enegel
-description: About Our Company
+title: Enegel Pricing
+description: Enegel Pricing
 date: 2023-01-01
 ---
 <script setup>
