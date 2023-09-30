@@ -1,13 +1,13 @@
 <template>
   <!--<footer class="relative bg-gray-900" aria-labelledby="footer-heading" style="background-image: url('/img/bgwhirllarge.png'); background-repeat:no-repeat;background-position: right center;background-size: cover;">-->
   <footer class="overflow-hidden relative bg-gray-900">
-    <img class="absolute top-0 -right-1/4 opacity-30 w-5/6 -rotate-12" src="/img/bgwhirllarge.png">
+    <img class="absolute top-10 -right-1/4 opacity-30 w-5/6 -rotate-12" src="/img/bgwhirllarge.png">
     <h2 id="footer-heading" class="sr-only">Footer</h2>
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="">
           <logo class="w-48 text-gray-300"></logo>
-          <p class="ml-8 mt-2 text-md font-bold leading-6 text-gray-300">Delivering great customer experience<br/> assured by generative AI</p>
+          <p class="ml-8 mt-2 text-md font-bold leading-6 text-indigo-200/80">Delivering great customer experience<br/> assured by generative AI</p>
           <div class="flex space-x-6">
             <a v-for="item in navigation.social" :key="item.name" :href="item.href" class="text-gray-500 hover:text-gray-400">
               <span class="sr-only">{{ item.name }}</span>
