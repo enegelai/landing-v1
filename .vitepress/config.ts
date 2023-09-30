@@ -2,6 +2,7 @@ import { defineConfig, HeadConfig } from 'vitepress';
 import { createWriteStream } from 'node:fs';
 import path from 'node:path';
 import { SitemapStream } from 'sitemap';
+import vue from '@vitejs/plugin-vue';
 
 const links: any[] = [];
 
@@ -11,6 +12,13 @@ export default defineConfig({
   srcDir: '.',
   srcExclude: ['**/README.md', '**/TODO.md'],
   outDir: './dist',
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag.includes('-')
+      }
+    }
+  },
   markdown: {
     headers: {
       level: [2, 6]
@@ -50,7 +58,20 @@ export default defineConfig({
         src: '//js.hsforms.net/forms/embed/v2.js'
       }
     ],
-    ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-9YYSL8KCZV');"]
+    ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-9YYSL8KCZV');"],
+    [
+      'script',
+      {
+        src: '/bot/index.umd.js'
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: '/bot/index.css'
+      }
+    ],
   ],
   transformHtml: (_, id, { pageData }) => {
     if (!/[\\/]404\.html$/.test(id))
