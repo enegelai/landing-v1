@@ -39,11 +39,8 @@ import { ref, onMounted, watchEffect} from 'vue';
 const ticketSpiceBot = ref(null);
 const botConfigured = ref(false);
 
-window.addEventListener('load', ()=>{
-  console.log('Window on load');
-  setupBot();
-});
-
+/*
+*/
 
 watchEffect(async () => {
   if (ticketSpiceBot.value) {
@@ -56,9 +53,11 @@ watchEffect(async () => {
 
 function setupBot(){
   if(botConfigured.value){
+    console.log(`Bot already initialized`);
     return;
   }
   botConfigured.value = true;
+  console.log(`Initializing bot`);
   const chatBot = ticketSpiceBot.value;
   //const chatBot = document.querySelector('chat-bot');
   const chatBotState = chatBot.store.state;
@@ -107,10 +106,15 @@ function setupBot(){
   chatBot.addEventListener('chatbot:send:file', (e) => {
     console.log(e.detail);
   });
+  console.log(`Bot Initialized`);
 }
 
 onMounted(() => {
   console.log(`On Mounted!`);
+  window.addEventListener('load', ()=>{
+    console.log('Window on load');
+    setupBot();
+  });
   //setupBot();
 });
 
