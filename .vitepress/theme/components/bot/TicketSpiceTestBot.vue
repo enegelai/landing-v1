@@ -13,11 +13,12 @@
               </svg>
               <div class="text-4xl text-gray-900 ml-4 font-bold">TicketSpice</div>
             </div>
-            <div class="hidden sm:mt-32 sm:flex lg:mt-16">
-              <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">TicketSpice Enegel.ai Bot Test Page</span>
-            </div>
             <h1 class="mt-24 text-4xl font-bold tracking-tight text-gray-900 sm:mt-10 sm:text-6xl">The #1 Event Ticketing Software For Event Pros To <p class="text-green-500">Sell Tickets Online</p></h1>
             <p class="mt-8 text-lg leading-8 text-gray-600">Sell tickets online for your festival, farm, fair, concert, museum and more. TicketSpice is easy to use, highly customizable, and unbelievably affordable.</p>
+            <div class="hidden sm:mt-32 sm:flex lg:mt-8 my-2">
+              <span class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-md font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10">TicketSpice Enegel.ai Bot Test Page</span>
+            </div>
+            <button type="button" class="rounded-md bg-green-600 px-2.5 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500" @click="clearBotConversation">Clear Bot Conversation</button>
           </div>
         </div>
         <div class="relative lg:col-span-5 lg:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0">
@@ -26,96 +27,29 @@
       </div>
     </div>
     <ClientOnly>
-      <chat-bot ref="ticketSpiceBot" name="TicketSpice" stream custom-request> </chat-bot>
+      <chat-bot
+          ref="ticketSpiceBot"
+          name="TicketSpice"
+          url="wss://bot-service-poqiruzabq-uc.a.run.app"
+          org-id="webconnex"
+          bot-id="testbot"
+          welcome-message="Hello! Welcome to TicketSpice. We're here to make your event ticketing experience seamless and affordable. How can I assist you today?"
+      >
+      </chat-bot>
     </ClientOnly>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted, watchEffect} from 'vue';
-
-// This Bot setup is temporary, only for demo purposes
+import { ref } from 'vue';
 
 const ticketSpiceBot = ref(null);
-const botConfigured = ref(false);
 
-/*
-*/
-
-watchEffect(async () => {
-  if (ticketSpiceBot.value) {
-    setTimeout(()=>{
-      setupBot();
-    },1000);
-  }
-})
-
-
-function setupBot(){
-  if(botConfigured.value){
-    console.log(`Bot already initialized`);
-    return;
-  }
-  botConfigured.value = true;
-  console.log(`Initializing bot`);
+function clearBotConversation(){
   const chatBot = ticketSpiceBot.value;
-  //const chatBot = document.querySelector('chat-bot');
-  const chatBotState = chatBot.store.state;
-
-  chatBotState.clearMessages();
-  const firstMessage = chatBot.addMessage();
-  chatBotState.updateMessage(firstMessage, 'Hello! Welcome to TicketSpice. We\'re here to make your event ticketing experience seamless and affordable. How can I assist you today?');
-
-  let text = '';
-  chatBot.addEventListener('chatbot:send', (e) => {
-    console.log(e.detail);
-    const { messages, newMessage } = e.detail;
-    if (!messages || !messages[0] || !newMessage) return;
-    const lastMessage = messages[messages.length - 1];
-    //chatBotState.updateMessage(newMessage, 'This is the test response. This is the test response.This is the test response.This is the test response.');
-    chatBot.fetchStream(
-        //`http://localhost:3070/api/bot/message`,
-        'https://bot-service-poqiruzabq-uc.a.run.app/api/bot/message',
-        {
-          method: 'POST',
-          headers: {
-            accept: 'text/event-stream',
-            'Content-Type': 'application/json',
-            'Access-Control-Allow-Origin': 'null'
-          },
-          body: JSON.stringify({ text: lastMessage.content }),
-          onmessage: (res) => {
-            const data = chatBot.decodeStreamData(res);
-            try {
-              const resp = JSON.parse(data);
-              text += resp?.result?.text;
-            }catch (e){
-              text += `Error: ${e.message}`;
-            }
-            // add to chatbot message
-            chatBotState.updateMessage(newMessage, text);
-          },
-          onclose: () => {
-            console.log('close', text);
-            text = '';
-          },
-        },
-    );
-  });
-
-  chatBot.addEventListener('chatbot:send:file', (e) => {
-    console.log(e.detail);
-  });
-  console.log(`Bot Initialized`);
+  if(chatBot){
+    chatBot.clearConversation();
+  }
 }
-
-onMounted(() => {
-  console.log(`On Mounted!`);
-  window.addEventListener('load', ()=>{
-    console.log('Window on load');
-    setupBot();
-  });
-  //setupBot();
-});
 
 </script>
