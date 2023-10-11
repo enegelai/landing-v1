@@ -62,7 +62,8 @@ export default defineConfig({
     [
       'script',
       {
-        src: '/bot/index.umd.js'
+        async: '',
+        src: '/bot/index.umd.js',
       }
     ],
     [

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vitepress",
     "build": "vitepress build",
-    "serve": "vitepress serve"
+    "serve": "vitepress serve --port 4177"
   },
   "devDependencies": {
     "@headlessui/vue": "^1.7.14",
