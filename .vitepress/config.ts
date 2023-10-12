@@ -59,6 +59,22 @@ export default defineConfig({
       }
     ],
     ['script', {}, "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-9YYSL8KCZV');"],
+    /*
+    [
+      'script',
+      {
+        async: '',
+        src: 'https://cdn.jsdelivr.net/npm/@enegelai/bot-widget@latest/dist/index.umd.js',
+      }
+    ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@enegelai/bot-widget@latest/dist/index.css'
+      }
+    ],
+    */
     [
       'script',
       {

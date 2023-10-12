@@ -63,7 +63,7 @@ const people = [
     linkedinUrl: 'https://www.linkedin.com/in/lukederrin/'
   },
   {
-    name: 'Maria Prepbrazhenskaya',
+    name: 'Maria Preobrazhenskaya',
     role: 'Customer Success',
     imageUrl: '/img/Maria P Pic.png',
     location: '23 years in Customer Care',
