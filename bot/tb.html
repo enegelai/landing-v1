@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bot widget embed test</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+<div style="width:100%;height: 100%;background-color: #f1f5f9">
+    Bot widget embed test
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/index.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/index.umd.js" type="text/javascript" async></script>
+    <chat-bot
+            ref="ticketSpiceBot"
+            name="BalloonFiesta"
+            url="wss://bot-service-poqiruzabq-uc.a.run.app"
+            org-id="webconnex"
+            bot-id="balloons"
+            welcome-message="Hello! Welcome to the Albuquerque International Balloon Fiesta. We're here to help. How can I assist you today?"
+    >
+    </chat-bot>
+    <!-- Enegel.ai bot widget end -->
+
+</div>
+
+</body>
+</html>
