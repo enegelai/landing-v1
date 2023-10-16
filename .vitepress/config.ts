@@ -8,7 +8,7 @@ const links: any[] = [];
 
 export default defineConfig({
   title: 'CX',
-  description: 'AI Powered Continuous CX Improvement',
+  description: 'Delivering Great Customer Experience Assured by Generative AI',
   srcDir: '.',
   srcExclude: ['**/README.md', '**/TODO.md'],
   outDir: './dist',
@@ -125,6 +125,7 @@ export default defineConfig({
     console.log(`transformHead: ${JSON.stringify(page)} => canonical: ${cu}`);
 
     head.push(['link', {rel: 'canonical', href: cu}]);
+    head.push(['meta', {property: 'og:url', content: cu}])
 
     if(pageData?.frontmatter?.title) {
       head.push(['meta', {property: 'og:title', content: pageData.frontmatter.title}])
@@ -132,6 +133,17 @@ export default defineConfig({
 
     if(pageData?.frontmatter?.description) {
       head.push(['meta', {property: 'og:description', content: pageData.frontmatter.description}])
+      head.push(['meta', {property: 'description', content: pageData.frontmatter.description}])
+    }
+
+    if(pageData?.frontmatter?.keywords) {
+      head.push(['meta', {property: 'keywords', content: pageData.frontmatter.keywords}])
+    }
+
+    if(pageData?.frontmatter?.image) {
+      head.push(['meta', {property: 'og:image', content: base+pageData.frontmatter.image}])
+    }else{
+      head.push(['meta', {property: 'og:image', content: base+'/img/enegelai.png'}])
     }
 
     return head

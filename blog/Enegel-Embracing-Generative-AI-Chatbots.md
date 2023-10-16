@@ -1,8 +1,7 @@
 ---
 title: "Embracing Generative AI in Chatbots: Maximizing Potential, Mitigating Risks"
 date: 2023-05-02
-author: enegel
-twitter: '@enegel'
+description: "The customer service industry has witnessed a dramatic transformation brought about by automation. Initially propelled by web and voice self-service options, it has now ascended to a more advanced level: AI-driven chatbots. This evolutionary journey, though groundbreaking, presents its own unique challenges. In this blog post, we explore the progression of customer service automation, the innovative potential of generative AI in chatbot technology, and strategies to manage associated risks such as hallucination."
 ---
 
 The customer service industry has witnessed a dramatic transformation brought about by automation. Initially propelled by web and voice self-service options, it has now ascended to a more advanced level: AI-driven chatbots. This evolutionary journey, though groundbreaking, presents its own unique challenges. In this blog post, we explore the progression of customer service automation, the innovative potential of generative AI in chatbot technology, and strategies to manage associated risks such as hallucination.

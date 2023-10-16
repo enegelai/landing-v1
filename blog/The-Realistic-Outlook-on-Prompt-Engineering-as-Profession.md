@@ -1,8 +1,7 @@
 ---
 title: "The Realistic Outlook on Prompt Engineering as a Profession"
 date: 2023-07-15
-author: enegel
-twitter: '@enegel'
+description: "In the AI industry, there has been growing chatter about a relatively new role - the 'Prompt Engineer.' The buzz around this profession is not without reason. Astonishingly high compensation packages associated with this role, ranging from $170,000 to as high as $360,000, have piqued interest among industry enthusiasts. But is this a sustainable trend, or merely an ephemeral surge? A recent [Harvard Business Review post] (https://hbr.org/2023/06/ai-prompt-engineering-isnt-the-future) provides insights that closely align with our observations."
 ---
 
 In the AI industry, there has been growing chatter about a relatively new role - the 'Prompt Engineer.' The buzz around this profession is not without reason. Astonishingly high compensation packages associated with this role, ranging from $170,000 to as high as $360,000, have piqued interest among industry enthusiasts. But is this a sustainable trend, or merely an ephemeral surge? A recent [Harvard Business Review post] (https://hbr.org/2023/06/ai-prompt-engineering-isnt-the-future) provides insights that closely align with our observations.

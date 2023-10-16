@@ -1,8 +1,7 @@
 ---
 title: "Enegel: Continuous CX Improvement Powered by Generative AI"
 date: 2023-02-01
-author: enegel
-twitter: '@enegel'
+description: "The customer experience (CX) is important for businesses to succeed in today's digital world. A positive CX can lead to increased customer satisfaction and loyalty, while a poor CX can harm a business's reputation and financial performance. To ensure that services can handle expected and unexpected levels of traffic and interactions, businesses can use AI-powered CX testing to simulate real-world scenarios and user behaviors. This can provide insights into the performance and scalability of a service. Challenges that can impact CX include traffic peaks, the ability of a service to autoscale, and updates to a service. CX testing provided by Enegel can help businesses improve CX and avoid damaging their reputation." 
 ---
 
 The customer experience (CX) is important for businesses to succeed in today's digital world. A positive CX can lead to increased customer satisfaction and loyalty, while a poor CX can harm a business's reputation and financial performance. To ensure that services can handle expected and unexpected levels of traffic and interactions, businesses can use AI-powered CX testing to simulate real-world scenarios and user behaviors. This can provide insights into the performance and scalability of a service. Challenges that can impact CX include traffic peaks, the ability of a service to autoscale, and updates to a service. CX testing provided by Enegel can help businesses improve CX and avoid damaging their reputation.

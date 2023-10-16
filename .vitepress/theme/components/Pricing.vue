@@ -177,7 +177,6 @@
           'Individual Performance Analysis', 
           'Team Performance Analysis',
           '100,000 words of analysis',
-          '1 Gb data storage',
           'Online customer support',
           'Additional 10,000 words of analysis $10',
           'Analytics Data Storage $10/GB/Month',

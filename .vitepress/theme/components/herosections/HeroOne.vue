@@ -6,7 +6,7 @@
       </div>-->
       <div class="mx-auto max-w-4xl py-16 sm:py-24 lg:py-32">
         <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Generative AI Powered<br />Continuous CX Improvement</h1>
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Delivering<br/><span class="font-bold text-green-500 dark:text-green-200">Great Customer Experience</span><br/>Assured by Generative AI</h1>
           <p class="mt-10 text-lg text-slate-600 text-center max-w-3xl mx-auto">
             In today's digital world, <span class="font-medium text-teal-700 dark:text-teal-400">Customer Experience (CX) </span>is a crucial factor for businesses to succeed.
             <span class="font-medium text-teal-700 dark:text-teal-400">A Positive CX </span>can lead to increased customer <span class="font-medium text-teal-700 dark:text-teal-400">Satisfaction, Loyalty </span> and

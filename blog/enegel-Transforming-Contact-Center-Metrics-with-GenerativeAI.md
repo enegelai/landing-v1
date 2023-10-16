@@ -1,8 +1,7 @@
 ---
 title: "Transforming Contact Center Metrics with Generative AI"
 date: 2023-04-01
-author: enegel
-twitter: '@enegel'
+description: "Contact center operations are continually evolving, and Generative AI is now leading the charge. This innovative technology provides a powerful new way to evaluate performance, with the ability to accurately measure key performance indicators (KPIs) through in-depth analysis of customer and agent interactions. From significant cost savings to enhanced coverage and the ability to create custom KPIs, generative AI is revolutionizing how contact centers assess and optimize their performance."
 ---
 
 Contact center operations are continually evolving, and Generative AI is now leading the charge. This innovative technology provides a powerful new way to evaluate performance, with the ability to accurately measure key performance indicators (KPIs) through in-depth analysis of customer and agent interactions. From significant cost savings to enhanced coverage and the ability to create custom KPIs, generative AI is revolutionizing how contact centers assess and optimize their performance.

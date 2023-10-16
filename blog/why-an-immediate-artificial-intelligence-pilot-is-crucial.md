@@ -1,10 +1,8 @@
 ---
 title: "Seizing the AI Opportunity: Why an Immediate Artificial Intelligence Pilot is Crucial"
 date: 2023-01-05
-author: enegel
-twitter: '@enegel'
+description: "Artificial Intelligence (AI) has undoubtedly moved from the realm of science fiction to a business reality. As companies across various sectors begin to realize the transformative potential of AI, early adoption becomes an imperative to stay competitive. This blog post underscores the urgency of initiating an AI pilot program to keep pace with, or potentially surpass, your competitors in the race to digital evolution." 
 ---
-
 
 Artificial Intelligence (AI) has undoubtedly moved from the realm of science fiction to a business reality. As companies across various sectors begin to realize the transformative potential of AI, early adoption becomes an imperative to stay competitive. This blog post underscores the urgency of initiating an AI pilot program to keep pace with, or potentially surpass, your competitors in the race to digital evolution.
 

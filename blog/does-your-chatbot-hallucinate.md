@@ -1,8 +1,7 @@
 ---
 title: "Does your chatbot hallucinate? Evaluating Generative AI Chatbots: The Crucial Role and Process of Testing"
 date: 2023-03-05
-author: enegel
-twitter: '@enegel'
+description: "In today's fast-paced digital landscape, generative AI chatbots have emerged as critical tools, reshaping business-consumer interactions, providing 24/7 services, and delivering personalized user experiences. Their effectiveness, reliability, and adaptability, however, are significantly determined by the depth of their testing process. This blog post explores why testing these AI chatbots is paramount and elaborates on the detailed testing procedure." 
 ---
 
 In today's fast-paced digital landscape, generative AI chatbots have emerged as critical tools, reshaping business-consumer interactions, providing 24/7 services, and delivering personalized user experiences. Their effectiveness, reliability, and adaptability, however, are significantly determined by the depth of their testing process. This blog post explores why testing these AI chatbots is paramount and elaborates on the detailed testing procedure.

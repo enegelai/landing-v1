@@ -1,8 +1,7 @@
 ---
 title: "Generative AI Chatbots and the Future of Contact Centers: The Balance Between Human and Machine"
 date: 2023-06-06
-author: enegel
-twitter: '@enegel'
+description: "The advent of artificial intelligence has left an indelible imprint on a host of industries, and contact centers are at the forefront of this transformative wave. A key instrument in this shift has been the emergence of AI chatbots. As we witness the evolution of these digital assistants from rule-based bots to their contemporary generative AI versions, it has ignited a debate about the role of humans in the future of contact centers. Can these advanced chatbots, with their myriad capabilities, render human agents redundant? Let's unravel this narrative." 
 ---
 
 The advent of artificial intelligence has left an indelible imprint on a host of industries, and contact centers are at the forefront of this transformative wave. A key instrument in this shift has been the emergence of AI chatbots. As we witness the evolution of these digital assistants from rule-based bots to their contemporary generative AI versions, it has ignited a debate about the role of humans in the future of contact centers. Can these advanced chatbots, with their myriad capabilities, render human agents redundant? Let's unravel this narrative.
