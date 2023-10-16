@@ -125,33 +125,33 @@ export default defineConfig({
     console.log(`transformHead: ${JSON.stringify(page)} => canonical: ${cu}`);
 
     head.push(['link', {rel: 'canonical', href: cu}]);
-    head.push(['meta', {property: 'og:type', content: 'website'}])
+    head.push(['meta', {property: 'og:type', content: 'article'}])
     head.push(['meta', {property: 'og:url', content: cu}])
-    head.push(['meta', {property: 'twitter:card', content: 'summary_large_image'}])
-    head.push(['meta', {property: 'twitter:domain', content: 'enegel.ai'}])
-    head.push(['meta', {property: 'twitter:url', content: cu}])
+    head.push(['meta', {name: 'twitter:card', content: 'summary_large_image'}])
+    head.push(['meta', {name: 'twitter:domain', content: 'enegel.ai'}])
+    head.push(['meta', {name: 'twitter:url', content: cu}])
 
     if(pageData?.frontmatter?.title) {
       head.push(['meta', {property: 'og:title', content: pageData.frontmatter.title}])
-      head.push(['meta', {property: 'twitter:title', content: pageData.frontmatter.title}])
+      head.push(['meta', {name: 'twitter:title', content: pageData.frontmatter.title}])
     }
 
     if(pageData?.frontmatter?.description) {
       head.push(['meta', {property: 'og:description', content: pageData.frontmatter.description}])
-      head.push(['meta', {property: 'description', content: pageData.frontmatter.description}])
-      head.push(['meta', {property: 'twitter:description', content: pageData.frontmatter.description}])
+      head.push(['meta', {name: 'description', content: pageData.frontmatter.description}])
+      head.push(['meta', {name: 'twitter:description', content: pageData.frontmatter.description}])
     }
 
     if(pageData?.frontmatter?.keywords) {
-      head.push(['meta', {property: 'keywords', content: pageData.frontmatter.keywords}])
+      head.push(['meta', {name: 'keywords', content: pageData.frontmatter.keywords}])
     }
 
     if(pageData?.frontmatter?.image) {
       head.push(['meta', {property: 'og:image', content: base+pageData.frontmatter.image}])
-      head.push(['meta', {property: 'twitter:image', content: base+pageData.frontmatter.image}])
+      head.push(['meta', {name: 'twitter:image', content: base+pageData.frontmatter.image}])
     }else{
       head.push(['meta', {property: 'og:image', content: base+'/img/enegelai.png'}])
-      head.push(['meta', {property: 'twitter:image', content: base+'/img/enegelai.png'}])
+      head.push(['meta', {name: 'twitter:image', content: base+'/img/enegelai.png'}])
     }
 
 
