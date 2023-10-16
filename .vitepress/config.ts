@@ -142,9 +142,13 @@ export default defineConfig({
 
     if(pageData?.frontmatter?.image) {
       head.push(['meta', {property: 'og:image', content: base+pageData.frontmatter.image}])
+      //head.push(['meta', {property: 'twitter:image', content: base+pageData.frontmatter.image}])
     }else{
       head.push(['meta', {property: 'og:image', content: base+'/img/enegelai.png'}])
+      //head.push(['meta', {property: 'twitter:image', content: base+'/img/enegelai.png'}])
     }
+
+    head.push(['meta', {property: 'twitter:card', content: 'summary'}])
 
     return head
 
