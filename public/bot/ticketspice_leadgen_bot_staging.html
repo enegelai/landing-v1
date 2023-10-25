@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bot widget embed test</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            height: 90%;
+        }
+    </style>
+</head>
+<body>
+<div style="width:100%;height: 100%;background-color: #f1f5f9">
+    Bot widget embed test
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/index.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/index.umd.js" type="text/javascript" async></script>
+    <chat-bot
+            name="TicketSpice"
+            url="wss://bots-stage.enegel.ai"
+            org-id="enegel"
+            bot-id="ueb20s3km3"
+            welcome-message="Hello! Welcome to TicketSpice. We're here to make your event ticketing experience seamless and affordable. How can I assist you today?"
+    >
+    </chat-bot>
+    <!-- Enegel.ai bot widget end -->
+
+</div>
+
+</body>
+</html>
