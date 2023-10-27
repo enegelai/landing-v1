@@ -7,15 +7,18 @@
 </head>
 <body>
 <div>
-    Bot widget embed test
+    Ticketspice Lead Generation Bot
+    <div>
+        <button type="button" id="clearConv">Clear Conversation</button>
+    </div>
 
     <!-- Enegel.ai bot widget begin -->
     <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
     <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
     <enegelai-bot
             name="TicketSpice"
-            url="bots-stage.enegel.ai"
-            org-id="enegel"
+            url="bot-service.enegel.ai"
+            org-id="webconnex"
             bot-id="ueb20s3km3"
             logo-svg='<svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g>
@@ -26,6 +29,17 @@
     >
     </enegelai-bot>
     <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
 
 </div>
 
