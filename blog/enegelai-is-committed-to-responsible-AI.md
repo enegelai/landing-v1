@@ -4,9 +4,12 @@ date: 2023-10-30
 author: Slava Zhakov
 avatar: Slava Pic 6.png
 linkedin: slavazhakov
-image: /img/blog/convreport.png
 description: "Enegel.ai is committed to responsible AI. Enegel.ai does not use any customer audio, video, chat, interaction transcripts, attachments, or other customer data to train Enegel’s or third-party artificial intelligence models"
 keywords: "Conversational Intelligence, Generative AI, Enegel, Enegel.ai, CX, Customer Experience, CX Improvement, Customer Satisfaction, Responsible AI" 
+---
+
+Enegel.ai is committed to responsible AI. Enegel.ai does not use any customer audio, video, chat, interaction transcripts, attachments, or other customer data to train Enegel’s or third-party artificial intelligence models.
+
 ---
 
 ## Enegel.ai Is Committed to Responsible AI
