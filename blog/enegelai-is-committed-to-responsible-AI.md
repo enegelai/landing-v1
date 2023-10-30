@@ -4,17 +4,16 @@ date: 2023-10-30
 author: Slava Zhakov
 avatar: Slava Pic 6.png
 linkedin: slavazhakov
-description: "Enegel.ai is committed to responsible AI. Enegel.ai does not use any customer audio, video, chat, interaction transcripts, attachments, or other customer data to train Enegel’s or third-party artificial intelligence models"
+image: responsible ai.jpg
+description: "At Enegel.ai, we believe AI has potential to elevate Customer Experience for both consumers and CX professionals; however, there are valid concerns about data privacy and ethical AI practices. Enegel.ai leads in this aspect by prioritizing responsible AI usage. We firmly believe that trust is the cornerstone of any customer relationship, and this extends to how customer data is handled."
 keywords: "Conversational Intelligence, Generative AI, Enegel, Enegel.ai, CX, Customer Experience, CX Improvement, Customer Satisfaction, Responsible AI" 
 ---
 
-Enegel.ai is committed to responsible AI. Enegel.ai does not use any customer audio, video, chat, interaction transcripts, attachments, or other customer data to train Enegel’s or third-party artificial intelligence models.
+At Enegel.ai, we believe AI has potential to elevate Customer Experience for both consumers and CX professionals; however, there are valid concerns about data privacy and ethical AI practices. Enegel.ai leads in this aspect by prioritizing responsible AI usage. We firmly believe that trust is the cornerstone of any customer relationship, and this extends to how customer data is handled.
 
 ---
 
 ## Enegel.ai Is Committed to Responsible AI
-
-At Enegel.ai, we believe AI has potential to elevate Customer Experience for both consumers and CX professionals; however, there are valid concerns about data privacy and ethical AI practices. Enegel.ai leads in this aspect by prioritizing responsible AI usage. We firmly believe that trust is the cornerstone of any customer relationship, and this extends to how customer data is handled.
 
 In line with this commitment, Enegel.ai does not use any customer audio, video, chat, interaction transcripts, attachments, or other customer data to train Enegel’s or third-party artificial intelligence models. This ensures that any personal or sensitive information shared by customers during interactions remains confidential and is not used for any ulterior purposes.
 
