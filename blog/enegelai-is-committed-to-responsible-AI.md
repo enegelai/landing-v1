@@ -13,8 +13,6 @@ At Enegel.ai, we believe AI has potential to elevate Customer Experience for bot
 
 ---
 
-## Enegel.ai Is Committed to Responsible AI
-
 In line with this commitment, **Enegel.ai does not use any customer audio, video, chat, interaction transcripts, attachments, or other customer data to train Enegel’s or third-party artificial intelligence models.** This ensures that any personal or sensitive information shared by customers during interactions remains confidential and is not used for any ulterior purposes.
 
 ## The Customer is in Control
