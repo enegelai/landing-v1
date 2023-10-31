@@ -4,7 +4,7 @@ date: 2023-10-30
 author: Slava Zhakov
 avatar: Slava Pic 6.png
 linkedin: slavazhakov
-image: responsible ai.png
+image: /img/blog/responsible ai.png
 description: "At Enegel.ai, we believe AI has potential to elevate Customer Experience for both consumers and CX professionals; however, there are valid concerns about data privacy and ethical AI practices. Enegel.ai leads in this aspect by prioritizing responsible AI usage. We firmly believe that trust is the cornerstone of any customer relationship, and this extends to how customer data is handled."
 keywords: "Conversational Intelligence, Generative AI, Enegel, Enegel.ai, CX, Customer Experience, CX Improvement, Customer Satisfaction, Responsible AI" 
 ---
