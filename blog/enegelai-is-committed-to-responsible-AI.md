@@ -12,6 +12,9 @@ keywords: "Conversational Intelligence, Generative AI, Enegel, Enegel.ai, CX, Cu
 At Enegel.ai, we believe AI has potential to elevate Customer Experience for both consumers and CX professionals; however, there are valid concerns about data privacy and ethical AI practices. Enegel.ai leads in this aspect by prioritizing responsible AI usage. We firmly believe that trust is the cornerstone of any customer relationship, and this extends to how customer data is handled.
 
 ---
+<script setup>
+import ButtonCTA from '../.vitepress/theme/components/ButtonCTA.vue'
+</script>
 
 In line with this commitment, **Enegel.ai does not use any customer audio, video, chat, interaction transcripts, attachments, or other customer data to train Enegel’s or third-party artificial intelligence models.** This ensures that any personal or sensitive information shared by customers during interactions remains confidential and is not used for any ulterior purposes.
 
