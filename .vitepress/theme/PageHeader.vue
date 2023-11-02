@@ -58,7 +58,7 @@
         <a href="/company/about" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
       </PopoverGroup>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="https://test.enegel.ai" target="_blank" class="text-sm font-semibold leading-6 bg-orange-700 px-2 py-1 rounded-md text-white">Log in <span aria-hidden="true">&rarr;</span></a>
+        <a href="https://app.enegel.ai" target="_blank" class="text-sm font-semibold leading-6 bg-orange-700 px-2 py-1 rounded-md text-white">Log in <span aria-hidden="true">&rarr;</span></a>
       </div>
     </nav>
     <ClientOnly>
