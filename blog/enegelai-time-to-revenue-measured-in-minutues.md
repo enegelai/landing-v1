@@ -37,9 +37,10 @@ Several pivotal factors underpin this efficiency:
 
 Enegel.ai is committed to maintaining this momentum, continuously seeking ways to refine our processes to benefit our customers.
 
-We offer a complimentary “
+We offer a complimentary trial. No AI knowledge is required. Just submit some of your conversations to see the results.
+
 <ButtonCTA title="Try it Now!" url="https://www.enegel.ai/company/tryit"></ButtonCTA>
-”. No AI knowledge is required. Just submit some of your conversations to see the results.
+
 
 
 **Slava Zhakov**
