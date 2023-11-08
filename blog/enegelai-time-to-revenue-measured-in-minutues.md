@@ -4,7 +4,7 @@ date: 2023-11-07
 author: Slava Zhakov
 avatar: Slava Pic 6.png
 linkedin: slavazhakov
-image: /img/blog/TTR minutes.png
+image: /img/blog/TTRminutes.png
 description: "The metric of Time-to-Revenue is a critical gauge for businesses, indicating the duration from contract execution to the generation of revenue. The essence of profitability is predicated on minimizing this interval—after all, until revenue streams begin, a company must shoulder ongoing expenses, from platform maintenance to employee salaries for deployment tasks."
 keywords: "Conversational Intelligence, Generative AI, Enegel, Enegel.ai, CX, Customer Experience, CX Improvement, Customer Satisfaction, Responsible AI" 
 ---
