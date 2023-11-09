@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bot widget embed test</title>
+</head>
+<body>
+<div>
+    Nano Hearing Aids Bot Test Page
+    <div>
+        <button type="button" id="clearConv">Clear Conversation</button>
+    </div>
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <enegelai-bot
+            name="SimpleHomeBuyers"
+            url="bots-stage.enegel.ai"
+            org-id="enegel"
+            bot-id="qj95sh7dp9"
+    >
+    </enegelai-bot>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
+</div>
+
+</body>
+</html>
