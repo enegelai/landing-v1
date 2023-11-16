@@ -1,6 +1,10 @@
 ---
 title: "Embracing Generative AI in Chatbots: Maximizing Potential, Mitigating Risks"
 date: 2023-05-02
+author: Slava Zhakov
+avatar: Slava Pic 6.png
+linkedin: slavazhakov
+image: /img/blog/embracinggenAIbots.png
 description: "The customer service industry has witnessed a dramatic transformation brought about by automation. Initially propelled by web and voice self-service options, it has now ascended to a more advanced level: AI-driven chatbots. This evolutionary journey, though groundbreaking, presents its own unique challenges. In this blog post, we explore the progression of customer service automation, the innovative potential of generative AI in chatbot technology, and strategies to manage associated risks such as hallucination."
 ---
 
@@ -37,3 +41,7 @@ Setting conversational boundaries ensures your chatbot remains on topic. By limi
 
 ## In Summary
 The advent of generative AI in chatbot technology promises a new frontier of more interactive and satisfying customer experiences. Its transformative potential for both chatbots and voicebots is substantial. However, like any potent tool, its application must be thoughtfully managed to mitigate risks. With strategic safeguards in place, we can confidently harness this advanced technology to its fullest extent, thereby maximizing customer satisfaction and driving business growth.
+
+**Slava Zhakov**
+
+CEO, [Enegel.ai](https://www.enegel.ai)
