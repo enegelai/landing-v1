@@ -5,7 +5,12 @@
         <div class="px-6 lg:px-0 lg:pr-4 lg:pt-4">
           <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
             <h2 class="text-base font-semibold leading-7 text-indigo-600">Try It Now!</h2>
-            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Complimentary CX Assurance Analysis!</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Virtual Agent</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600"> 
+We believe that our Virtual Agent can out-perform your digital customer care team for most use cases and we’d like to prove it.  We’ll create a bot for you based on your enterprise training material (or web site).  This process takes about a day and we’d love to make an Enegel.ai Virtual Agent for your business.
+Please provide your contact information below and a representative will contact you to discuss your use case and collect training material for your prototype bot.
+Once you provide training material we’ll create a prototype bot in the testing area of our web site and you can try Enegel.ai Virtual Agent for yourself.</p>
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Conversational Intelligence</p>
             <p class="mt-6 text-lg leading-8 text-gray-600">
 We’re confident Enegel can produce the highest quality evaluation of agent performance and we’d like to show you with a complimentary analysis. Compare Enegel’s CX Assurance report to the reports produced by your quality assurance process and tell us how we did! </p>
             <p class="mt-6 text-lg leading-8 font-semibold text-gray-600">
