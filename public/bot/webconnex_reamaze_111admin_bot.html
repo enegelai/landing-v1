@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ReAmaze Bot Embed</title>
+</head>
+<body>
+<div>
+    ReAmaze Bot
+</div>
+<script type="text/javascript" async src="https://cdn.reamaze.com/assets/reamaze.js"></script>
+<script type="text/javascript">
+    var _support = _support || { 'ui': {}, 'user': {} };
+    _support['account'] = '111admin';
+    _support['ui']['contactMode'] = 'default';
+    _support['ui']['enableKb'] = 'true';
+    _support['ui']['styles'] = {
+        widgetColor: 'rgb(200, 55, 55)',
+        gradient: true,
+    };
+    _support['ui']['shoutboxFacesMode'] = 'brand-avatar';
+    _support['ui']['shoutboxHeaderLogo'] = true;
+    _support['ui']['widget'] = {
+        icon: 'chat',
+        displayOn: 'all',
+        fontSize: 'default',
+        allowBotProcessing: false,
+        label: {
+            text: 'How can we help you?',
+            mode: "default",
+        },
+        position: 'bottom-right',
+        mobilePosition: 'bottom-right'
+    };
+    _support['apps'] = {
+        faq: {"enabled":true,"placeholder":""},
+        recentConversations: {},
+        orders: {}
+    };
+</script>
+</body>
+</html>
