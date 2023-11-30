@@ -1,6 +1,6 @@
 ---
 title: "Enegel.ai Announces Generative AI Virtual Agent"
-date: 2023-10-16
+date: 2023-11-30
 author: Tod Famous
 avatar: Tod Famous Pic.png
 linkedin: tfamous
