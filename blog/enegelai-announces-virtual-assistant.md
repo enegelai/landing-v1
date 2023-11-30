@@ -26,9 +26,9 @@ A linguistic capability that exceeds any agent in your contact center
 * Optional integrations to IT infrastructure
 
 Enegel.ai Virtual Agent has completed trials and is now in production for several customers. The feedback we've received so far is outstanding:
-**“This is just brilliant…  unbelievable answers and quality here.”**  - Co-Founder of a $4B e-commerce vendor 
-**“This is amazing. I like it a lot. Seems ready to go to me! ”** - CTO of a nationwide real-estate company
-**“This is very impressive.  We’re excited with what we’ll be able to do with this “** - Chief Operating Officer of a business to consumer product company.
+* **“This is just brilliant…  unbelievable answers and quality here.”**  - Co-Founder of a $4B e-commerce vendor 
+* **“This is amazing. I like it a lot. Seems ready to go to me! ”** - CTO of a nationwide real-estate company
+* **“This is very impressive.  We’re excited with what we’ll be able to do with this “** - Chief Operating Officer of a business to consumer product company.
 
 ## Pricing and availability
 
