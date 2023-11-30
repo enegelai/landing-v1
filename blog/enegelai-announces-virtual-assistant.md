@@ -9,15 +9,13 @@ description: "Enegel.ai Virtual Agent is a next generation chatbot designed from
 keywords: "Conversational Intelligence, Generative AI, Enegel, Enegel.ai, CX, Customer Experience, CX Improvement, Customer Satisfaction" 
 ---
 
-With Conversational Intelligence product [Enegel.ai](https://www.enegel.ai) takes on one of the more expensive and monotonous back-office tasks in a contact center operation: quality and performance management.  We’ve developed a software product that can analyze customer service conversations and produce personalized performance reports that are superior to those produced by quality management staff.
+Enegel.ai Virtual Agent is a next generation chatbot designed from the bottom up to leverage the most advanced Generative AI technology to outperform your digital customer service agents.
 
 ---
 <script setup>
 import ButtonCTA from '../.vitepress/theme/components/ButtonCTA.vue'
 </script>
 
-
-Enegel.ai Virtual Agent is a next generation chatbot designed from the bottom up to leverage the most advanced Generative AI technology to outperform your digital customer service agents.
 
 A linguistic capability that exceeds any agent in your contact center
 * 1 day setup/training based on your website and/or enterprise training materials
