@@ -1,25 +1,27 @@
-<!-- Enegel.ai bot widget begin -->
-<link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
-<script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
 
-<style>
-    enegelai-bot {
-        --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
-        --enegelai-bot-header-background: rgba(200, 40, 68, 1);
-        --enegelai-bot-popup-logo-color: rgba(200, 40, 68, 1);
-        --enegelai-bot-message-user-background: rgba(200, 40, 68, 0.7);
-        --enegelai-bot-anchor-background: rgba(200, 40, 68, 1);
-        --enegelai-bot-anchor-border-color: rgba(200, 40, 68, 1);
-    }
-    enegelai-bot::part(header){
-    }
-</style>
-<enegelai-bot
-        name="Christmas At The Princess"
-        url="bot-service.enegel.ai"
-        org-id="webconnex"
-        bot-id="jhsibgz659"
-        logo-svg='<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+    <style>
+        enegelai-bot {
+            --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
+            --enegelai-bot-header-background: rgba(200, 40, 68, 1);
+            --enegelai-bot-popup-logo-color: rgba(200, 40, 68, 1);
+            --enegelai-bot-message-user-background: rgba(200, 40, 68, 0.7);
+            --enegelai-bot-anchor-background: rgba(200, 40, 68, 1);
+            --enegelai-bot-anchor-border-color: rgba(200, 40, 68, 1);
+            --enegelai-bot-form-submit-background: rgba(200, 40, 68, 1);
+            --enegelai-bot-form-submit-border: rgba(200, 40, 68, 1);
+        }
+        enegelai-bot::part(header){
+        }
+    </style>
+    <enegelai-bot
+            name="Christmas At The Princess"
+            url="bot-service.enegel.ai"
+            org-id="webconnex"
+            bot-id="jhsibgz659"
+            logo-svg='<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                      width="49" height="40" viewBox="0 0 1243.000000 1011.000000"
                      preserveAspectRatio="xMidYMid meet">
                     <g transform="translate(0.000000,1011.000000) scale(0.100000,-0.100000)" fill="currentColor">
@@ -237,6 +239,6 @@
                     18 c-18 9 -35 17 -38 17 -3 0 -25 -32 -50 -72z"/>
                     </g>
                     </svg>'
->
-</enegelai-bot>
-<!-- Enegel.ai bot widget end -->
+    >
+    </enegelai-bot>
+    <!-- Enegel.ai bot widget end -->
