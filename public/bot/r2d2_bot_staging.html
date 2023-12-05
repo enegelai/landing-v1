@@ -5,18 +5,45 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>R2D2 Lead Gen Bot</title>
 </head>
-<body>
-<div>
-    R2D2 Lead Generation Bot
-    <div>
-        <button type="button" id="clearConv">Clear Conversation</button>
+<body style="margin: 0;">
+<div style="position: relative; width: 100%; height: 100vh;">
+    <wix-bg-media id="bgMedia_comp-lg5s8cr4" class="SUz0WK" data-container-id="comp-lg5s8cr4" data-container-size="0, 0"
+                  data-page-id="pbi5z" data-bg-effect-name="BgParallax"
+                  style="z-index: 10; position: absolute; top:0px; left:0px; right:0px; bottom:0px; will-change: transform; transform: translate3d(0px, 0px, 0px);">
+        <wix-video id="videoContainer_comp-lg5s8cr4"
+                   data-video-info="{&quot;fittingType&quot;:&quot;fill&quot;,&quot;alignType&quot;:&quot;center&quot;,&quot;hasBgScrollEffect&quot;:&quot;true&quot;,&quot;bgEffectName&quot;:&quot;BgParallax&quot;,&quot;videoId&quot;:&quot;b7ca96_68ec65a9e20f4c6d8f81ea6e6770edc5&quot;,&quot;videoWidth&quot;:1920,&quot;videoHeight&quot;:1080,&quot;qualities&quot;:[{&quot;quality&quot;:&quot;480p&quot;,&quot;size&quot;:409920,&quot;url&quot;:&quot;video/b7ca96_68ec65a9e20f4c6d8f81ea6e6770edc5/480p/mp4/file.mp4&quot;},{&quot;quality&quot;:&quot;720p&quot;,&quot;size&quot;:921600,&quot;url&quot;:&quot;video/b7ca96_68ec65a9e20f4c6d8f81ea6e6770edc5/720p/mp4/file.mp4&quot;},{&quot;quality&quot;:&quot;1080p&quot;,&quot;size&quot;:2073600,&quot;url&quot;:&quot;video/b7ca96_68ec65a9e20f4c6d8f81ea6e6770edc5/1080p/mp4/file.mp4&quot;}],&quot;isVideoDataExists&quot;:&quot;1&quot;,&quot;videoFormat&quot;:&quot;mp4&quot;,&quot;playbackRate&quot;:1,&quot;autoPlay&quot;:true,&quot;containerId&quot;:&quot;comp-lg5s8cr4&quot;,&quot;animatePoster&quot;:&quot;none&quot;,&quot;focalPoint&quot;:{&quot;x&quot;:50,&quot;y&quot;:50}}"
+                   class="bX9O_S bgVideo yK6aSC">
+            <video id="comp-lg5s8cr4_video" class="K8MSra" role="presentation" crossorigin="anonymous"
+                   aria-label="Space_Nebula (1).mp4" playsinline="" preload="auto" muted="" loop="" tabindex="-1"
+                   autoplay=""
+                   src="https://video.wixstatic.com/video/b7ca96_68ec65a9e20f4c6d8f81ea6e6770edc5/1080p/mp4/file.mp4"
+                   style="height: 100%; width: 100%; object-fit: cover; object-position: 50% 0%; opacity: 1;"></video>
+        </wix-video>
+    </wix-bg-media>
+    <img src="/bot/bot.webp" alt="" style="position: absolute; z-index: 20; top:20px; left:100px;" fetchpriority="high">
+    <div style="z-index: 100; color: white; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:sans-serif; font-size: 62px; line-height: 0.3; ">
+        <h2>Let AutoGPT Find</h2>
+        <h2>Your Next</h2>
+        <h2>100,000 Customers</h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>R2D2 Lead Generation Bot</h2>
+        <div style="margin-bottom: 10px;">
+            <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+        </div>
+        Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
+        </div>
     </div>
-    <h2>Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor</h2>
 
     <!-- Enegel.ai bot widget begin -->
     <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
     <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
     <style>
+        enegelai-bot {
+            --enegelai-bot-max-height: 800px;
+            --enegelai-bot-height-top-margin: 120px;
+        }
     </style>
     <enegelai-bot
             name="R2D2"
@@ -39,6 +66,7 @@
     </script>
 
 </div>
+
 
 </body>
 </html>
