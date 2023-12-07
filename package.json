@@ -33,7 +33,7 @@
     "sitemap": "^7.1.1",
     "mdi-vue": "^3.0.13",
     "@mdi/js": "^7.3.67",
-    "axios": "^1.6.2",
+    "axios": "^1.6.0",
     "vue-loading-overlay": "^6.0.3"
   }
 }
