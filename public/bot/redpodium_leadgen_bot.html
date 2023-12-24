@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RedPodium Bot</title>
+</head>
+<body>
+<div>
+    RedPodium Bot Page
+    <div>
+        <button type="button" id="clearConv">Clear Conversation</button>
+    </div>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
+            --enegelai-bot-max-height: 800px;
+            --enegelai-bot-height-top-margin: 120px;
+        }
+    </style>
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <enegelai-bot
+            name="RedPodium"
+            url="bots-stage.enegel.ai"
+            org-id="enegel"
+            bot-id="vw3rj9g865"
+            logo-svg='<svg width="33" height="33" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.3638 28.4566C14.834 22.9402 12.9759 16.9288 12.2889 7.77166H21.9783C20.2034 15.6847 19.6625 23.6063 19.3638 28.4566ZM33.1603 9.55325H26.387C26.6891 8.41674 27.8422 4.01381 27.8422 4.01381C27.9574 3.49585 27.565 3.00391 27.0366 3.00391H8.03573C7.55761 3.00391 7.20065 3.26964 7.21162 3.8897C7.252 6.08516 7.77249 10.4385 8.1489 12.4909H1.57548C1.09188 12.4909 0.736909 12.8877 0.75037 13.3732C0.99865 22.5253 7.19367 27.0859 10.8765 28.5923C11.5081 28.851 12.0925 28.1469 11.6358 27.6384C9.46508 25.2202 6.08389 20.5961 5.38193 16.8438H9.07222C11.0335 24.1158 14.5947 28.4386 19.7148 33.0713C20.4372 33.7248 21.5964 33.3215 21.7644 32.3601C23.2715 23.7584 24.2103 17.7621 25.3779 13.9061H29.5553C29.1385 18.5248 27.2405 23.0308 24.8828 27.0389C24.5982 27.5228 25.1386 28.1539 25.6351 27.8931C29.4466 25.8913 35.2029 20.1607 33.9874 10.3645C33.9321 9.91708 33.609 9.55325 33.1603 9.55325Z" fill="#F13058"/>
+                      </svg>'
+
+    ></enegelai-bot>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
+</div>
+
+</body>
+</html>
