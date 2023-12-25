@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>GivingFuel Bot</title>
+</head>
+<body>
+<div>
+    GivingFuel Bot Page
+    <div>
+        <button type="button" id="clearConv">Clear Conversation</button>
+    </div>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
+            --enegelai-bot-max-height: 800px;
+            --enegelai-bot-height-top-margin: 120px;
+        }
+    </style>
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <enegelai-bot
+            name="GivingFuel"
+            url="bots-stage.enegel.ai"
+            org-id="enegel"
+            bot-id="qak76jfbv3"
+            logo-svg='<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="33" height="36" viewBox="0 0 82 95" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                       <g>
+                         <path fill="#ffa000" d="M 25.5,3.5 C 27.288,3.21478 28.9547,3.54811 30.5,4.5C 35.099,11.3706 39.4323,18.3706 43.5,25.5C 42.8631,28.1071 41.6965,30.4404 40,32.5C 38.1862,33.7596 36.3529,33.7596 34.5,32.5C 32.3333,29.5 30.1667,26.5 28,23.5C 23.6048,29.5664 19.6048,35.8998 16,42.5C 10.857,66.347 20.357,77.5136 44.5,76C 55.1936,72.6364 60.8603,65.3031 61.5,54C 61.3224,49.1158 59.989,44.6158 57.5,40.5C 52.399,47.7708 46.7323,54.6042 40.5,61C 31.2895,61.4242 29.1229,57.5909 34,49.5C 42.3541,39.9562 49.8541,29.7895 56.5,19C 58.3668,18.2888 59.8668,18.7888 61,20.5C 75.5735,37.3465 77.9068,55.6799 68,75.5C 55.3827,89.1129 40.216,92.9462 22.5,87C 12.9362,83.1024 6.43621,76.269 3,66.5C 0.520024,55.6158 1.18669,44.9491 5,34.5C 12.0816,24.2668 18.9149,13.9335 25.5,3.5 Z"/>
+                       </g>
+                     </svg>'
+
+    ></enegelai-bot>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
+</div>
+
+</body>
+</html>
