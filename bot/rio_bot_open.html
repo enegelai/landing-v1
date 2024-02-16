@@ -16,15 +16,26 @@
             --enegelai-bot-height-top-margin-sm: 0px;
         }
     </style>
-    <enegelai-bot
-            name=""
-            url="bot-service.enegel.ai"
-            org-id="rio"
-            bot-id="1vogjoh4ve"
-            always-open="true"
-            logo-url="https://riorouter.com/cdn/shop/files/rio-logo_280x.png"
-    >
-    </enegelai-bot>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', '');
+            el.setAttribute('url', 'bot-service.enegel.ai');
+            el.setAttribute('org-id', 'rio');
+            el.setAttribute('bot-id', '1vogjoh4ve');
+            el.setAttribute('always-open', 'true');
+            el.setAttribute('logo-url', 'https://riorouter.com/cdn/shop/files/rio-logo_280x.png');
+            // Set prefilled form fields using values from query string
+            const searchParams = new URLSearchParams(window.location.search);
+            const prefilledFormFields = {
+                name: searchParams.get('name') || '',
+                email: searchParams.get('email') || '',
+                phoneNumber: searchParams.get('phoneNumber') || '',
+            };
+            el.setAttribute('prefilled-form-fields', JSON.stringify(prefilledFormFields));
+            document.body.appendChild(el);
+        })();
+    </script>
     <!-- Enegel.ai bot widget end -->
 </body>
 </html>
