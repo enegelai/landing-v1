@@ -45,5 +45,17 @@
         })();
     </script>
     <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
 </body>
 </html>
