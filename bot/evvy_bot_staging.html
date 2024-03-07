@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Evvy Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
+        <svg width="138" height="60" viewBox="0 0 69 30" fill="none">
+            <path d="M25.2687 20.5198L19.7901 7.41406H17.2119L23.9796 23.6351H26.5578L33.3255 7.41406H30.7473L25.2687 20.5198Z" fill="currentColor"></path>
+            <path d="M42.779 20.5198L37.3003 7.41406H34.7222L41.4899 23.6351H44.0681L50.8358 7.41406H48.1502L42.779 20.5198Z" fill="currentColor"></path>
+            <path d="M2.81744 9.77559H15.1712V7.41226H2.81744V2.25591H17.2123V0H0.239258V23.6333H18.1791V21.27H2.81744V9.77559Z" fill="currentColor"></path>
+            <path d="M65.6609 7.41406L60.2897 20.5198L54.8111 7.41406H52.2329L59.0006 23.6351L56.315 29.9731H58.8932L68.2391 7.41406H65.6609Z" fill="currentColor"></path>
+        </svg>
+    </div>
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>Know what’s<br> up down there</h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Evvy <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <div style="margin-bottom: 30px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 180px;
+            --enegelai-bot-height-top-margin-sm: 0px;
+            --enegelai-bot-popup-logo-color: black;
+        }
+    </style>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', '');
+            el.setAttribute('url', 'bots-stage.enegel.ai');
+            el.setAttribute('org-id', 'enegel');
+            el.setAttribute('bot-id', 'd91e74jwab');
+            el.setAttribute('logo-svg', '<svg width="54px" height="18px" viewBox="0 0 69 30" fill="none">\n' +
+                '<path d="M25.2687 20.5198L19.7901 7.41406H17.2119L23.9796 23.6351H26.5578L33.3255 7.41406H30.7473L25.2687 20.5198Z" fill="currentColor"></path>\n' +
+                '<path d="M42.779 20.5198L37.3003 7.41406H34.7222L41.4899 23.6351H44.0681L50.8358 7.41406H48.1502L42.779 20.5198Z" fill="currentColor"></path>\n' +
+                '<path d="M2.81744 9.77559H15.1712V7.41226H2.81744V2.25591H17.2123V0H0.239258V23.6333H18.1791V21.27H2.81744V9.77559Z" fill="currentColor"></path>\n' +
+                '<path d="M65.6609 7.41406L60.2897 20.5198L54.8111 7.41406H52.2329L59.0006 23.6351L56.315 29.9731H58.8932L68.2391 7.41406H65.6609Z" fill="currentColor"></path>\n' +
+                '</svg>');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
+</body>
+</html>
