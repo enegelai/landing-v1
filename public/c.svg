@@ -1,0 +1,12 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" x="0" y="0" fill="url(#PurpleLg)" />
+    <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm"
+       fill="#fff" style="stroke:#fff;stroke-width:0.25mm;fill:#fff">
+        <path d="M 23.7 8.55 L 19.4 8.55 Q 18.9 6.2 16.95 4.9 A 7.722 7.722 0 0 0 13.554 3.672 A 9.89 9.89 0 0 0 12.35 3.6 Q 10.2 3.6 8.375 4.675 Q 6.55 5.75 5.425 7.9 Q 4.406 9.849 4.31 12.619 A 16.872 16.872 0 0 0 4.3 13.2 A 14.499 14.499 0 0 0 4.453 15.354 A 10.793 10.793 0 0 0 4.95 17.375 Q 5.6 19.2 6.7 20.4 Q 7.8 21.6 9.275 22.225 Q 10.75 22.85 12.35 22.85 Q 14.15 22.85 15.6 22.275 Q 17.05 21.7 18.05 20.55 Q 19.05 19.4 19.4 17.85 L 23.7 17.85 Q 22.9 21.65 19.875 24.025 Q 16.85 26.4 12.4 26.4 A 13.106 13.106 0 0 1 8.343 25.788 A 11.757 11.757 0 0 1 6.025 24.75 Q 3.2 23.1 1.6 20.125 A 13.336 13.336 0 0 1 0.157 15.598 A 17.104 17.104 0 0 1 0 13.25 A 16.836 16.836 0 0 1 0.346 9.759 A 12.75 12.75 0 0 1 1.6 6.3 Q 3.2 3.35 6.025 1.675 A 12.069 12.069 0 0 1 11.632 0.02 A 14.566 14.566 0 0 1 12.4 0 A 14.376 14.376 0 0 1 15.87 0.399 A 10.706 10.706 0 0 1 19.9 2.325 Q 22.9 4.65 23.7 8.55 Z"
+              vector-effect="non-scaling-stroke" transform="translate(40,40)"/>
+    </g>
+    <defs>
+        <linearGradient id="PurpleLg" x1="-50" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0.32" stop-color="#D8C1FE"></stop><stop offset="1" stop-color="#7142B9"></stop>
+        </linearGradient>
+    </defs>
+</svg>
