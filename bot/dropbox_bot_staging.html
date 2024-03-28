@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dropbox Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
+        <svg height="50" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.70076 0.320312L0.478516 4.91332L7.70076 9.50633L14.9242 4.91332L22.1465 9.50633L29.3687 4.91332L22.1465 0.320312L14.9242 4.91332L7.70076 0.320312Z" fill="blue"></path><path d="M7.70076 18.6925L0.478516 14.0994L7.70076 9.50633L14.9242 14.0994L7.70076 18.6925Z" fill="blue"></path><path d="M14.9242 14.0994L22.1465 9.50633L29.3687 14.0994L22.1465 18.6925L14.9242 14.0994Z" fill="blue"></path><path d="M14.9242 24.8164L7.70077 20.2234L14.9242 15.6304L22.1465 20.2234L14.9242 24.8164Z" fill="blue"></path></svg>
+    </div>
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>Join over 700 million<br> registered users<br> who trust Dropbox</h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Dropbox <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <div style="margin-bottom: 30px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 180px;
+            --enegelai-bot-height-top-margin-sm: 0px;
+            --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
+            --enegelai-bot-header-background: rgba(148, 163, 184, 1);
+            --enegelai-bot-popup-color: rgba(148, 163, 184, 1);
+            --enegelai-bot-popup-background: rgba(148, 163, 184, 0.7);
+            --enegelai-bot-message-user-background: rgba(148, 163, 184, 0.7);
+            --enegelai-bot-anchor-background: rgba(148, 163, 184, 1);
+            --enegelai-bot-anchor-border-color: rgba(148, 163, 184, 1);
+        }
+    </style>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', 'Dropbox');
+            el.setAttribute('url', 'bots-stage.enegel.ai');
+            el.setAttribute('org-id', 'enegel');
+            el.setAttribute('bot-id', '1ly4gqbjyq');
+            el.setAttribute('logo-svg', '<svg height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.70076 0.320312L0.478516 4.91332L7.70076 9.50633L14.9242 4.91332L22.1465 9.50633L29.3687 4.91332L22.1465 0.320312L14.9242 4.91332L7.70076 0.320312Z" fill="blue"></path><path d="M7.70076 18.6925L0.478516 14.0994L7.70076 9.50633L14.9242 14.0994L7.70076 18.6925Z" fill="blue"></path><path d="M14.9242 14.0994L22.1465 9.50633L29.3687 14.0994L22.1465 18.6925L14.9242 14.0994Z" fill="blue"></path><path d="M14.9242 24.8164L7.70077 20.2234L14.9242 15.6304L22.1465 20.2234L14.9242 24.8164Z" fill="blue"></path></svg>');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
+</body>
+</html>
