@@ -13,14 +13,20 @@
     </div>
     <style>
         enegelai-bot {
-            --enegelai-bot-header-background: rgba(131, 190, 150, 1);
-            --enegelai-bot-message-user-background: rgba(131, 190, 150, 1);
-            --enegelai-bot-anchor-background: rgba(131, 190, 150, 1);
-            --enegelai-bot-anchor-border-color: rgba(131, 190, 150, 1);
-            --enegelai-bot-form-submit-background: rgba(131, 190, 150, 1);
-            --enegelai-bot-form-submit-border: rgba(131, 190, 150, 1);
+            --enegelai-bot-header-background: rgba(107, 173, 198, 1);
+            --enegelai-bot-message-user-background: rgba(107, 173, 198, 1);
+            --enegelai-bot-anchor-background: rgba(107, 173, 198, 1);
+            --enegelai-bot-anchor-border-color: rgba(107, 173, 198, 1);
+            --enegelai-bot-form-submit-background: rgba(107, 173, 198, 1);
+            --enegelai-bot-form-submit-border: rgba(107, 173, 198, 1);
+        }
+        enegelai-bot::part(header) {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            background-image: linear-gradient(to right, white, rgba(23, 125, 194, 1));
         }
     </style>
+
     <!-- Enegel.ai bot widget begin -->
     <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
     <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>

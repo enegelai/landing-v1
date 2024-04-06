@@ -57,8 +57,115 @@
     <!-- Enegel.ai bot widget end -->
 
     <script>
+
+        function subscribeToBotEvents(){
+            const chatBotElement = document.querySelector('enegelai-bot');
+
+            // Event "c7o:bot:conversationStart" is emitted when user sends the first message in the conversation
+            chatBotElement.addEventListener('c7o:bot:conversationStart',(event)=>{
+                console.log(`Bot Event: c7o:bot:conversationStart`,event.detail);
+                // Expect object with the first user message in event.details:
+                /* {
+                      "timestamp": 1712354899770,
+                      "author": "user",
+                      "type": "text",
+                      "data": {
+                          "text": "I need new contract management system"
+                      },
+                      "id": "agrqk3td6c"
+                 } */
+            });
+
+            // Event "c7o:bot:actionPresented" is emitted when action button is presented to user, such as "Book VIP Demo" button
+            chatBotElement.addEventListener('c7o:bot:actionPresented',(event)=>{
+                console.log(`Bot Event: c7o:bot:actionPresented`,event.detail);
+                // Expect object with the action details in event.details:
+                /*
+                    {
+                        "action": {
+                            "type": "hubspotMeeting",
+                            "leadCondition": "Hot",
+                            "name": "Book VIP Demo",
+                            "value": "https://meetings-eu1.hubspot.com/zach-hintze/website-demo-request-ae-round-robin?utm_campaign=042024-chatbot-crescendo&utm_source=crescendo-chat",
+                            "hubspotMeetingAuto": false,
+                            "title": "Book VIP Demo",
+                            "url": "https://meetings-eu1.hubspot.com/zach-hintze/website-demo-request-ae-round-robin?utm_campaign=042024-chatbot-crescendo&utm_source=crescendo-chat",
+                            "internalId": 0
+                        }
+                    }
+                * */
+            });
+
+            // Event "c7o:bot:actionCompleted" is emitted when user completed action, for example, booked a meeting via Hubspot
+            chatBotElement.addEventListener('c7o:bot:actionCompleted',(event)=>{
+                console.log(`Bot Event: c7o:bot:actionCompleted`,event.detail);
+                // Expect object with the action and results data in event.details:
+                /*
+                {
+                      "action": {
+                          "type": "hubspotMeeting",
+                          "leadCondition": "Hot",
+                          "name": "Book VIP Demo",
+                          "value": "https://meetings-eu1.hubspot.com/zach-hintze/website-demo-request-ae-round-robin?utm_source=crescendocx.ai",
+                          "hubspotMeetingAuto": false,
+                          "title": "Book VIP Demo",
+                          "url": "https://meetings-eu1.hubspot.com/zach-hintze/website-demo-request-ae-round-robin?utm_source=crescendocx.ai",
+                          "internalId": 0,
+                          "triggered": 1712356706593
+                      },
+                      "data": {
+                          "meetingBookSucceeded": true,
+                          "meetingsPayload": {
+                              "linkType": "PERSONAL_LINK",
+                              "offline": false,
+                              "userSlug": "slava-sayko",
+                              "formGuid": "733e58ab-cd68-40f2-838a-2a51bb03c620",
+                              "bookingResponse": {
+                                  "event": {
+                                      "duration": 3600000,
+                                      "formFields": [],
+                                      "dateString": "2024-04-08",
+                                      "dateTime": 1712610900000,
+                                      "bookingTimeConflictStatus": false
+                                  },
+                                  "postResponse": {
+                                      "timerange": {
+                                          "start": 1712610900000,
+                                          "end": 1712614500000
+                                      },
+                                      "organizer": {
+                                          "firstName": "Slava",
+                                          "lastName": "Sayko",
+                                          "email": "",
+                                          "fullName": "",
+                                          "name": "Slava Sayko",
+                                          "userId": null
+                                      },
+                                      "bookedOffline": false,
+                                      "contact": {
+                                          "firstName": "Slava",
+                                          "lastName": "Sayko",
+                                          "email": "slava.sayko@gmail.com",
+                                          "fullName": "",
+                                          "name": "Slava Sayko",
+                                          "userId": null
+                                      }
+                                  }
+                              },
+                              "isPaidMeeting": false
+                          }
+                      }
+                  }
+                * */
+            });
+        }
+
+
         window.addEventListener('load', () => {
             const chatBot = document.querySelector('enegelai-bot');
+
+            subscribeToBotEvents();
+
             const clearConvBtn = document.querySelector('#clearConv');
             clearConvBtn.addEventListener('click', (e) => {
                 console.log('Clear conv clicked!');
