@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Owner.com Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
+        <img height="50" src="https://assets-global.website-files.com/63355f061512f71caf6ee3de/65984937be6a23cb179b3fdd_logo-brand.svg">
+    </div>
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>Making online growth easy<br> for restaurants<br></h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Owner.com <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <div style="margin-bottom: 30px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 180px;
+            --enegelai-bot-height-top-margin-sm: 0px;
+        }
+    </style>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', '');
+            el.setAttribute('url', 'bots-stage.enegel.ai');
+            el.setAttribute('org-id', 'enegel');
+            el.setAttribute('bot-id', '3550sg681o');
+            el.setAttribute('logo-url', 'https://assets-global.website-files.com/63355f061512f71caf6ee3de/65984937be6a23cb179b3fdd_logo-brand.svg');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
+</body>
+</html>
