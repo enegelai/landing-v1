@@ -44,6 +44,16 @@
             font-style: normal;
             font-size: 26px;
         }
+        @media only screen and (max-width: 768px) {
+            enegelai-bot {
+                --enegelai-bot-anchor-popup-position: bottom-end;
+            }
+            enegelai-bot::part(anchor){
+                position: fixed;
+                right: 25px;
+                top: 25px;
+            }
+        }
     </style>
     <script>
         (function() {
