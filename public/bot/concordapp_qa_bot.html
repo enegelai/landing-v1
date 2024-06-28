@@ -22,6 +22,13 @@
         </div>
         Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
         </div>
+        <br/>
+        <a href="#hide">Navigate to page with bot HIDDEN</a>
+        <a href="#show">Navigate to page with bot SHOWN</a>
+        <br/>
+        <br/>
+        <div id="show">Some content</div>
+        <div id="hide">Some other content</div>
     </div>
     <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
 
@@ -60,6 +67,22 @@
     <!-- Enegel.ai bot widget end -->
 
     <script>
+
+        function monitorPathChanges(){
+            const chatBot = document.querySelector('enegelai-bot');
+            window.navigation.addEventListener("navigate", (event) => {
+
+                const dest = event?.destination?.url || '';
+                if(dest.endsWith('#hide')){
+                    console.log('Hiding bot');
+                    chatBot.style.display = 'none';
+                }else{
+                    console.log('Showing bot');
+                    chatBot.style.display = 'block';
+                }
+                console.log('location changed!'+ dest);
+            });
+        }
 
         function subscribeToBotEvents(){
             const chatBotElement = document.querySelector('enegelai-bot');
@@ -168,6 +191,8 @@
             const chatBot = document.querySelector('enegelai-bot');
 
             subscribeToBotEvents();
+
+            monitorPathChanges();
 
             const clearConvBtn = document.querySelector('#clearConv');
             clearConvBtn.addEventListener('click', (e) => {
