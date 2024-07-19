@@ -31,12 +31,15 @@
     <style>
         enegelai-bot {
             --enegelai-bot-header-background: rgba(251, 230, 227,1);
-            --enegelai-bot-header-color: rgba(206, 54, 31, 1);
+            --enegelai-bot-header-color: rgba(0, 0, 0, 0.7);
             --enegelai-bot-message-user-background: rgba(206, 54, 31, 1);
             --enegelai-bot-anchor-background: rgba(206, 54, 31, 1);
             --enegelai-bot-anchor-border-color: rgba(206, 54, 31, 1);
             --enegelai-bot-form-submit-background: rgba(206, 54, 31, 1);
             --enegelai-bot-form-submit-border: rgba(206, 54, 31, 1);
+            --enegelai-bot-popup-color: rgba(255, 255, 255, 1);
+            --enegelai-bot-popup-background: rgba(206, 54, 31, 0.7);
+            --enegelai-bot-popup-close-color: black;
             --enegelai-bot-popup-min-height: 60px;
         }
         enegelai-bot::part(header){
@@ -44,7 +47,18 @@
             font-weight: 800;
             font-style: normal;
             font-size: 18px;
+            background-image: linear-gradient(to right, rgba(206, 54, 31, 1), white);
+            background-origin: padding-box;
         }
+        enegelai-bot::part(header-title){
+            color: white;
+            margin-left: -70px;
+        }
+        enegelai-bot::part(header-close){
+            margin-top: 4px;
+        }
+
+
     </style>
     <script>
         (function() {
@@ -53,7 +67,7 @@
             el.setAttribute('url', 'bot-service.enegel.ai');
             el.setAttribute('org-id', 'webconnex');
             el.setAttribute('bot-id', '32c9ml8btz');
-            el.setAttribute('logo-url', 'https://cdn.prod.website-files.com/634fc25cf7785f21c7b6963f/653d285d6e7429d323236912_IMG_1159-p-500.png');
+            el.setAttribute('logo-url', 'https://enegel.ai/bot/three-legacies-logo.png');
             document.body.appendChild(el);
         })();
     </script>
