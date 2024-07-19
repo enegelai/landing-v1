@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>MeisterTask Crescendo Bot</title>
+    <title>Burnside Farms</title>
 </head>
-<body style="margin: 0;">
+<body>
+<div>
     <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
-        <img src="https://cdn3.meistertask.com/assets/meister_assets/products/meistertask/logo-90ef1b8d288944db494e4492bd53412f8c509cf61a20dc96c42dab98397a083f.svg" alt="" itemprop="logo" height="64">
+        <img style="padding:4px 4px 4px 4px;" src="https://images.squarespace-cdn.com/content/v1/547deab0e4b0c7a2cfeb73f5/9228b0db-1d3a-48c5-9543-cb5814a76285/burnside_logo_no_address+copy.jpg?format=200w" alt="" itemprop="logo" height="100">
     </div>
     <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
         <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
-            <h2>Your Team.<br> Aligned.</h2>
+            <h2>Burnside Farms</h2>
         </div>
         <div style="font-family:sans-serif; font-size: 22px;">
-            <h2>MeisterTask <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <h2><a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
             <div style="margin-bottom: 30px;">
                 <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
             </div>
@@ -25,42 +26,39 @@
 
     <!-- Enegel.ai bot widget begin -->
     <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
     <style>
         enegelai-bot {
             --enegelai-bot-header-background: rgba(255, 255, 255, 1);
-            --enegelai-bot-message-user-background: rgba(0, 170, 255, 1);
-            --enegelai-bot-anchor-background: rgba(0, 170, 255, 1);
-            --enegelai-bot-anchor-border-color: rgba(0, 170, 255, 1);
-            --enegelai-bot-form-submit-background: rgba(0, 170, 255, 1);
-            --enegelai-bot-form-submit-border: rgba(0, 170, 255, 1);
+            --enegelai-bot-header-color: rgba(0, 0, 0, 0.7);
+            --enegelai-bot-message-user-background: rgba(165, 212, 1, 1);
+            --enegelai-bot-anchor-background: rgba(165, 212, 1, 1);
+            --enegelai-bot-anchor-border-color: rgba(165, 212, 1, 1);
+            --enegelai-bot-form-submit-background: rgba(165, 212, 1, 1);
+            --enegelai-bot-form-submit-border: rgba(165, 212, 1, 1);
             --enegelai-bot-popup-min-height: 60px;
         }
         enegelai-bot::part(header){
-            font-family: "Sen", sans-serif;
-            font-weight: 400;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
             font-style: normal;
-            font-size: 26px;
-            background-image: linear-gradient(to right, white, rgba(0, 170, 255, 1));
+            font-size: 24px;
+            background-image: linear-gradient(to right, white, rgba(165, 212, 1, 1));
             background-origin: padding-box;
         }
-
-        enegelai-bot {
-            --enegelai-bot-max-height: 100vh;
-            --enegelai-bot-height-top-margin: 180px;
-            --enegelai-bot-height-top-margin-sm: 0px;
+        enegelai-bot::part(header-title){
+            margin-left: -50px;
         }
     </style>
     <script>
         (function() {
-            let el = document.createElement('enegelai-bot');
-            el.setAttribute('name', '');
+            var el = document.createElement('enegelai-bot');
+            el.setAttribute('name', 'Burnside Farms');
             el.setAttribute('url', 'bot-service.enegel.ai');
-            el.setAttribute('org-id', 'meister');
-            el.setAttribute('bot-id', 'sc2vbov4vn');
-            el.setAttribute('always-open', 'true');
-            el.setAttribute('logo-url', 'https://cdn3.meistertask.com/assets/meister_assets/products/meistertask/logo-90ef1b8d288944db494e4492bd53412f8c509cf61a20dc96c42dab98397a083f.svg');
+            el.setAttribute('org-id', 'webconnex');
+            el.setAttribute('bot-id', 'hyd8bgl1xj');
+            el.setAttribute('logo-url', 'https://enegel.ai/bot/burnside_logo_transparent.png');
             document.body.appendChild(el);
         })();
     </script>
@@ -76,6 +74,8 @@
             });
         });
     </script>
+
+</div>
 
 </body>
 </html>
