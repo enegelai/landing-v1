@@ -15,10 +15,14 @@
         </div>
         <div style="font-family:sans-serif; font-size: 22px;">
             <h2>c7o <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
-            <div style="margin-bottom: 30px;">
+            <div style="margin-bottom: 20px;">
                 <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
             </div>
-            Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
+            Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor<br>
+            <div style="margin-top: 20px;margin-bottom: 10px;">
+            <button type="button" id="setInput" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Set Input</button>
+            </div>
+            Use Set Input button<br>to test setting input value<br>
         </div>
     </div>
     <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
@@ -95,6 +99,11 @@
             clearConvBtn.addEventListener('click', (e) => {
                 console.log('Clear conv clicked!');
                 chatBot.clearConversation();
+            });
+
+            const setInputBtn = document.querySelector('#setInput');
+            setInputBtn.addEventListener('click', (e) => {
+                chatBot.setInputValue(`test set input value @ ${Date.now()}`);
             });
 
             subscribeToBotEvents();
