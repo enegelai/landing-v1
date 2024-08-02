@@ -95,6 +95,7 @@
 
         window.addEventListener('load', () => {
             const chatBot = document.querySelector('enegelai-bot');
+            chatBot.setInputValue(`test set input value @ ${Date.now()}`);
             const clearConvBtn = document.querySelector('#clearConv');
             clearConvBtn.addEventListener('click', (e) => {
                 console.log('Clear conv clicked!');

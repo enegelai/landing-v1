@@ -15,10 +15,13 @@
         </div>
         <div style="font-family:sans-serif; font-size: 22px;">
             <h2>Owner.com <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
-            <div style="margin-bottom: 30px;">
-                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            <div style="margin-bottom: 10px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 16px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
             </div>
-            Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
+            <div style="font-size: 16px;">Use Clear Conversation button to test a new conversation<br>as if with a different visitor</div>
+            <div style="margin-top: 20px;">
+                <button type="button" id="toggleBot" style="cursor: pointer; color: white; font-size: 26px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Show or Hide Bot</button>
+            </div>
         </div>
     </div>
     <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
@@ -38,6 +41,9 @@
             --enegelai-bot-message-user-background: rgba(81, 135, 210, 0.7);
             --enegelai-bot-anchor-background: rgb(197, 200, 205);
             --enegelai-bot-anchor-border-color: rgb(189, 209, 237);
+        }
+        enegelai-bot::part(anchor) {
+            display: none;
         }
     </style>
     <script>
@@ -61,6 +67,14 @@
                 console.log('Clear conv clicked!');
                 chatBot.clearConversation();
             });
+            const toggleBotBtn = document.querySelector('#toggleBot');
+            let botIsOpen = false;
+            toggleBotBtn.addEventListener('click', (e) => {
+                console.log('Toggle Bot Clicked!');
+                botIsOpen = !botIsOpen;
+                chatBot.setOpen(botIsOpen);
+            });
+
         });
     </script>
 
