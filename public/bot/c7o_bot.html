@@ -43,7 +43,6 @@
             left: 60px;
             top: 12px;
         }
-
     </style>
     <script>
         (function() {
@@ -59,12 +58,37 @@
     <!-- Enegel.ai bot widget end -->
 
     <script>
+
+        /*
+                {
+                    headers: {
+                        'Access-Control-Allow-Origin': '*',
+                    },
+                }
+         */
+
+        async function getToken(){
+            try {
+                const response = await fetch('https://quickstart-voice-javascript-sdk-6444-dev.twil.io/voice-token');
+                const {identity, token} = await response.json();
+                if (response.ok) {
+                    // todo store token
+                    console.log(`Got a token: ${token}`);
+                } else {
+                    console.error(`Response status: ${response.status}`);
+                }
+            }catch (e){
+                console.error('Error: ', e);
+            }
+        }
+
         window.addEventListener('load', () => {
             const chatBot = document.querySelector('enegelai-bot');
             const clearConvBtn = document.querySelector('#clearConv');
             clearConvBtn.addEventListener('click', (e) => {
                 console.log('Clear conv clicked!');
                 chatBot.clearConversation();
+                getToken();
             });
         });
     </script>
