@@ -21,8 +21,9 @@
             Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor<br>
             <div style="margin-top: 20px;margin-bottom: 10px;">
             <button type="button" id="setInput" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Set Input</button>
+            <button type="button" id="clearInput" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Input</button>
             </div>
-            Use Set Input button<br>to test setting input value<br>
+            Use Set Input and Clear Input buttons<br>to test setting/clearing input value<br>
         </div>
     </div>
     <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
@@ -107,6 +108,11 @@
             const setInputBtn = document.querySelector('#setInput');
             setInputBtn.addEventListener('click', (e) => {
                 chatBot.setInputValue(`test set input value @ ${Date.now()}`);
+            });
+
+            const clearInputBtn = document.querySelector('#clearInput');
+            clearInputBtn.addEventListener('click', (e) => {
+                chatBot.setInputValue('');
             });
 
             subscribeToBotEvents();
