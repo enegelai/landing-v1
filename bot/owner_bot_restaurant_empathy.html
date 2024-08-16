@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Owner.com Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
+        <svg width="48" height="48" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M102 204C158.333 204 204 158.333 204 102C204 45.667 158.333 0 102 0C45.667 0 0 45.667 0 102C0 158.333 45.667 204 102 204Z" fill="black"></path>
+            <g class="pin">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M102 166C102 166 153 139.4 153 102C153 73.8335 130.167 51 102 51C73.8335 51 51 73.8335 51 102C51 139.4 102 166 102 166Z" fill="white"></path>
+                <circle cx="102" cy="102" r="24" fill="black"></circle>
+            </g>
+        </svg>
+    </div>
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>RESTAURANT + EMPATHY VERSION</h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Owner.com <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <div style="margin-bottom: 10px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 16px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            <div style="font-size: 16px;">Use Clear Conversation button to test a new conversation<br>as if with a different visitor</div>
+            <div style="margin-top: 20px;">
+                <button type="button" id="toggleBot" style="cursor: pointer; color: white; font-size: 26px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Show or Hide Bot</button>
+            </div>
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 180px;
+            --enegelai-bot-height-top-margin-sm: 0px;
+            --enegelai-bot-header-color: rgba(255, 250, 250, 0.9);
+            --enegelai-bot-header-background: rgba(61, 28, 110, 1);
+            --enegelai-bot-message-user-background: rgba(61, 28, 110, 0.8);
+            --enegelai-bot-anchor-background: rgba(61, 28, 110, 1);
+            --enegelai-bot-anchor-border-color: rgba(61, 28, 110, 1);
+        }
+        enegelai-bot::part(header){
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30px;
+            background-image: linear-gradient(to right, rgb(216, 193, 254), rgba(61, 28, 110, 1));
+            background-origin: padding-box;
+        }
+    </style>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', 'Owner');
+            el.setAttribute('url', 'bot-service.enegel.ai');
+            el.setAttribute('org-id', 'owner');
+            el.setAttribute('bot-id', 'nx6wn34o1v');
+            el.setAttribute('logo-svg', '<svg width="36" height="36" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M102 204C158.333 204 204 158.333 204 102C204 45.667 158.333 0 102 0C45.667 0 0 45.667 0 102C0 158.333 45.667 204 102 204Z" fill="black"></path><g class="pin"><path fill-rule="evenodd" clip-rule="evenodd" d="M102 166C102 166 153 139.4 153 102C153 73.8335 130.167 51 102 51C73.8335 51 51 73.8335 51 102C51 139.4 102 166 102 166Z" fill="white"></path><circle cx="102" cy="102" r="24" fill="black"></circle></g></svg>');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+            const toggleBotBtn = document.querySelector('#toggleBot');
+            let botIsOpen = false;
+            toggleBotBtn.addEventListener('click', (e) => {
+                console.log('Toggle Bot Clicked!');
+                botIsOpen = !botIsOpen;
+                chatBot.setOpen(botIsOpen);
+            });
+
+        });
+    </script>
+
+</body>
+</html>
