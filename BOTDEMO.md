@@ -36,7 +36,7 @@ You should see:
 
 Navigate to http://localhost:5176/ in your browser. 
 You will see enegel.ai web site. 
-You can open any bot demo page by navigating to "http://localhost:5176/bot/<bot page name>"
+You can open any bot demo page by navigating to "http://localhost:5176/bot/[bot_page_name].html"
 
 For example:
 http://localhost:5176/bot/ticketspice_amadorvintners_bot.html
