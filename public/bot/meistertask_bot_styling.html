@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MeisterTask Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
+        <img src="https://cdn3.meistertask.com/assets/meister_assets/products/meistertask/logo-90ef1b8d288944db494e4492bd53412f8c509cf61a20dc96c42dab98397a083f.svg" alt="" itemprop="logo" height="64">
+    </div>
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>Your Team.<br> Aligned.</h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Styling Example</h2>
+            <h2>MeisterTask <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <div style="margin-bottom: 10px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 16px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            <div style="font-size: 16px;">Use Clear Conversation button to test a new conversation<br>as if with a different visitor</div>
+            <div style="margin-top: 20px;">
+                <button type="button" id="toggleBot" style="cursor: pointer; color: white; font-size: 26px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Show or Hide Bot</button>
+            </div>
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-header-background: rgba(255, 255, 255, 1);
+            --enegelai-bot-message-user-background: rgba(0, 170, 255, 1);
+            --enegelai-bot-anchor-background: rgba(0, 170, 255, 1);
+            --enegelai-bot-anchor-border-color: rgba(0, 170, 255, 1);
+            --enegelai-bot-form-submit-background: rgba(0, 170, 255, 1);
+            --enegelai-bot-form-submit-border: rgba(0, 170, 255, 1);
+            --enegelai-bot-popup-min-height: 60px;
+            --enegelai-bot-header-close-color: red;
+            --enegelai-bot-typing-color: red;
+            --sl-focus-ring: solid 5px red;
+        }
+        enegelai-bot::part(header){
+            font-family: "Sen", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 26px;
+            background-image: linear-gradient(to right, white, rgba(0, 170, 255, 1));
+            background-origin: padding-box;
+        }
+
+        enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 180px;
+            --enegelai-bot-height-top-margin-sm: 0px;
+        }
+
+        enegelai-bot::part(anchor) {
+            display: none;
+        }
+
+    </style>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', '');
+            el.setAttribute('url', 'bot-service.enegel.ai');
+            el.setAttribute('org-id', 'meister');
+            el.setAttribute('bot-id', 'sc2vbov4vn');
+            el.setAttribute('logo-url', 'https://cdn3.meistertask.com/assets/meister_assets/products/meistertask/logo-90ef1b8d288944db494e4492bd53412f8c509cf61a20dc96c42dab98397a083f.svg');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- rgb() Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+            const toggleBotBtn = document.querySelector('#toggleBot');
+            let botIsOpen = false;
+            toggleBotBtn.addEventListener('click', (e) => {
+                console.log('Toggle Bot Clicked!');
+                botIsOpen = !botIsOpen;
+                chatBot.setOpen(botIsOpen);
+            });
+        });
+    </script>
+
+</body>
+</html>
