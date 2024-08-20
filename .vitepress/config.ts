@@ -10,7 +10,7 @@ export default defineConfig({
   title: 'CX',
   description: 'Delivering Great Customer Experience Assured by Generative AI',
   srcDir: '.',
-  srcExclude: ['**/README.md', '**/TODO.md'],
+  srcExclude: ['**/README.md','**/BOTDEMO.md','**/TODO.md'],
   outDir: './dist',
   vue: {
     template: {
