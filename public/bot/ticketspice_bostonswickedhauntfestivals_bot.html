@@ -1,3 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bostons Wicked Haunt Festival</title>
+</head>
+<body>
+<div>
+    <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
+        <img style="padding:4px 4px 4px 4px;" src="https://static.wixstatic.com/media/20175a_f0e08f39e7924615bc718e0aac84ca59~mv2.jpg/v1/fill/w_600,h_546,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/20175a_f0e08f39e7924615bc718e0aac84ca59~mv2.jpg");
+            document.body.appendChild" alt="" itemprop="logo" height="80">
+    </div>
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>Amador Vintners</h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Bostons Wicked Haunt Festival <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <div style="margin-bottom: 30px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            Use Clear Conversation button<br>to test a new conversation<br>as if with a different visitor
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+
 <!-- Enegel.ai bot widget begin -->
     <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
     <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
@@ -26,3 +53,18 @@
         })();
     </script>
     <!-- Enegel.ai bot widget end -->
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+        });
+    </script>
+
+</div>
+
+</body>
+</html>
