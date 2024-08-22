@@ -39,14 +39,14 @@
             --enegelai-bot-popup-min-height: 60px;
        }
 
-        enegelai-bot img {
-            max-width: 150px; /* Adjust this to match your other logo */
-            height: auto;
-            padding: 4px; /* Match padding to other image */
-        }
+       enegelai-bot img {
+    max-width: 150px !important; /* Force the width */
+    height: auto !important;
+    padding: 4px !important;
+}
     </style>
     <script>
-        (function() {
+          (function() {
         var el = document.createElement('enegelai-bot');
         el.setAttribute('name', '');
         el.setAttribute('url', 'bot-service.enegel.ai');
@@ -54,6 +54,15 @@
         el.setAttribute('bot-id', 'yjov568aky');
         el.setAttribute('logo-url', 'https://www.seatunique.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fseat_unique_logo_white_no_line.2f2c0a91.png&w=256&q=75');
         document.body.appendChild(el);
+
+        // Add an event listener to modify the logo size after the element is added
+        el.addEventListener('load', function() {
+            const logo = el.shadowRoot.querySelector('img');
+            if (logo) {
+                logo.style.maxWidth = '150px';
+                logo.style.height = 'auto';
+            }
+        });
     })();
     </script>
     <!-- Enegel.ai bot widget end -->
