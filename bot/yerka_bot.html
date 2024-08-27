@@ -8,7 +8,7 @@
 <body>
 <div>
     <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
-        <img style="padding:4px 4px 4px 4px;" src="https://fc-use1-00-pics-bkt-00.s3.amazonaws.com/786872380d9d8e41f80eab67d965f08851e03f0add5554a64f26b3db7be5eb08/f_marketingpicFull/u_1d63bdd21224dfb8d9cf1df75abaf738ca3f959775d93c5d496ecb3b5a49151e/img_1s32l6v9cc_3515b662c1d39c5bf30acc57f5c095cba4874ea5713702dbfa76f3fdd3c79bf0.png" alt="" itemprop="logo" height="80">
+        <img style="padding:4px 4px 4px 4px;" src="https://yerka.store/cdn/shop/files/yerka_blanco_110x.png?v=1613766188" alt="" itemprop="logo" height="80">
     </div>
     <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
         <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
@@ -31,28 +31,34 @@
         enegelai-bot {
             --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
             --enegelai-bot-header-background: rgba(22,28,44, 1);
-            --enegelai-bot-message-user-background: rgba(22,28,44,, 1);
-            --enegelai-bot-anchor-background: rgba(209,179,119, 1);
-            --enegelai-bot-anchor-border-color: rgba(209,179,119, 1);
-            --enegelai-bot-form-submit-background: rgba(184,36,44, 1);
-            --enegelai-bot-form-submit-border: rgba(184,36,44, 1);
+            --enegelai-bot-message-user-background: rgba(22,28,44, 1);
+            --enegelai-bot-anchor-background: rgba(199,170,112, 1);
+            --enegelai-bot-anchor-border-color: rgba(199,170,112, 1);
+            --enegelai-bot-form-submit-background: rgba(196,22,28, 1);
+            --enegelai-bot-form-submit-border: rgba(196,22,28, 1);
             --enegelai-bot-popup-min-height: 60px;
-        }
+       }
+
+  enegelai-bot img {
+    max-width: 150px; /* Adjust this to match your other logo */
+    height: auto;
+    padding: 4px; /* Match padding to other image */
+}
     </style>
     <script>
-        (function() {
-            var el = document.createElement('enegelai-bot');
-            el.setAttribute('name', '');
-            el.setAttribute('url', 'bot-service.enegel.ai');
-            el.setAttribute('org-id', 'c70');
-            el.setAttribute('bot-id', '0neul60riw');
-            el.setAttribute('logo-url', 'https://fc-use1-00-pics-bkt-00.s3.amazonaws.com/786872380d9d8e41f80eab67d965f08851e03f0add5554a64f26b3db7be5eb08/f_marketingpicFull/u_1d63bdd21224dfb8d9cf1df75abaf738ca3f959775d93c5d496ecb3b5a49151e/img_1s32l6v9cc_3515b662c1d39c5bf30acc57f5c095cba4874ea5713702dbfa76f3fdd3c79bf0.png');
-            document.body.appendChild(el);
-        })();
+             (function() {
+        var el = document.createElement('enegelai-bot');
+        el.setAttribute('name', '');
+        el.setAttribute('url', 'bot-service.enegel.ai');
+        el.setAttribute('org-id', 'c7o');
+        el.setAttribute('bot-id', 'yjov568aky');
+        el.setAttribute('logo-url', 'https://yerka.store/cdn/shop/files/yerka_blanco_110x.png?v=1613766188');
+        document.body.appendChild(el);
+    })();
     </script>
-    <!-- Enegel.ai bot widget end -->
+ <!-- Enegel.ai bot widget end -->
 
-    <script>
+ <script>
         window.addEventListener('load', () => {
             const chatBot = document.querySelector('enegelai-bot');
             const clearConvBtn = document.querySelector('#clearConv');
@@ -62,7 +68,7 @@
             });
         });
     </script>
-
+   
 </div>
 
 </body>
