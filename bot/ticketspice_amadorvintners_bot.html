@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Yerka</title>
+    <title>Amador Vintners</title>
 </head>
 <body>
 <div>
@@ -12,10 +12,10 @@
     </div>
     <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
         <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
-            <h2>Yerka</h2>
+            <h2>Amador Vintners</h2>
         </div>
         <div style="font-family:sans-serif; font-size: 22px;">
-            <h2>Yerka<a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <h2>Amador Vintners<a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
             <div style="margin-bottom: 30px;">
                 <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 22px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
             </div>
@@ -27,18 +27,33 @@
     <!-- Enegel.ai bot widget begin -->
     <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
     <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
     <style>
         enegelai-bot {
             --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
-            --enegelai-bot-header-background: rgba(22,28,44, 1);
-            --enegelai-bot-message-user-background: rgba(22,28,44,, 1);
-            --enegelai-bot-anchor-background: rgba(209,179,119, 1);
-            --enegelai-bot-anchor-border-color: rgba(209,179,119, 1);
-            --enegelai-bot-form-submit-background: rgba(184,36,44, 1);
-            --enegelai-bot-form-submit-border: rgba(184,36,44, 1);
+            --enegelai-bot-header-background: rgba(199,170,112, 1);
+            --enegelai-bot-message-user-background: rgba(199,170,112, 1);
+            --enegelai-bot-anchor-background: rgba(199,170,112, 1);
+            --enegelai-bot-anchor-border-color: rgba(199,170,112, 1);
+            --enegelai-bot-form-submit-background: rgba(199,170,112, 1);
+            --enegelai-bot-form-submit-border: rgba(199,170,112, 1);
             --enegelai-bot-popup-min-height: 60px;
         }
     </style>
+    <script>
+        (function() {
+            var el = document.createElement('enegelai-bot');
+            el.setAttribute('name', '');
+            el.setAttribute('url', 'bot-service.enegel.ai');
+            el.setAttribute('org-id', 'webconnex');
+            el.setAttribute('bot-id', 'm3k30ujjen');
+            el.setAttribute('logo-url', 'https://amadorwine.com/wp-content/uploads/2023/03/amador-vintners-logo.png');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- Enegel.ai bot widget end -->
     <script>
         (function() {
             var el = document.createElement('enegelai-bot');
