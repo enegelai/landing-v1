@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.prod.website-files.com/66643a14df53b71d1ed72d08/css/owner-redesign-2024.webflow.5c16cf341.min.css" rel="stylesheet" type="text/css">
+    <title>Owner.com Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <div aria-hidden="true" style="margin-left: 40px; display: flex;justify-content: space-between;align-items: center;">
+        <div class="nav_logo w-embed">
+            <svg width="24" height="24" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M102 204C158.333 204 204 158.333 204 102C204 45.667 158.333 0 102 0C45.667 0 0 45.667 0 102C0 158.333 45.667 204 102 204Z" fill="black"></path>
+            <g class="pin">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M102 166C102 166 153 139.4 153 102C153 73.8335 130.167 51 102 51C73.8335 51 51 73.8335 51 102C51 139.4 102 166 102 166Z" fill="white"></path>
+                <circle cx="102" cy="102" r="24" fill="black"></circle>
+            </g>
+            </svg>
+
+            <svg width="100%" height="100%" viewBox="0 0 90 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:-20px;">
+                <g clip-path="url(#clip0_1905_4826)">
+                    <path d="M29.6067 12.1634C29.6067 7.57497 32.3298 4.55371 36.4511 4.55371C40.5725 4.55371 43.2014 7.46332 43.2014 11.9946C43.2014 16.5258 40.5901 19.5103 36.4876 19.5103C32.3856 19.5103 29.6055 16.7124 29.6055 12.1621L29.6067 12.1634ZM39.9201 12.1075C39.9201 9.10528 38.6704 7.3707 36.4701 7.3707C35.2583 7.3707 34.3256 7.85542 33.7101 8.75125C33.1698 9.55321 32.8894 10.6724 32.8894 12.1088C32.8894 14.9625 34.2318 16.6971 36.4511 16.6971C37.6259 16.6971 38.5028 16.2492 39.0994 15.4105C39.6397 14.6453 39.9201 13.5274 39.9201 12.11V12.1075Z" fill="#090A0B"></path>
+                    <path d="M53.4839 19.2502L51.5997 11.9959L49.8284 19.2502H46.5835L43.5625 8.52673H46.7142L48.4297 15.781L50.3318 8.52673H52.9611L54.9939 15.8749L56.6535 8.52673H59.5442L56.5787 19.2502H53.4825H53.4839Z" fill="#090A0B"></path>
+                    <path d="M60.3711 8.52666H63.4114V10.4478H63.4673C64.269 8.99362 65.5938 8.30334 67.0114 8.30334C69.2307 8.30334 70.6111 9.70166 70.6111 12.7052V19.2514H67.5149V13.5629C67.5149 11.6228 66.9935 10.765 65.6687 10.765C64.3442 10.765 63.4687 11.7725 63.4687 13.6366V19.2502H60.3725V8.52666H60.3711Z" fill="#090A0B"></path>
+                    <path d="M71.6668 13.9907C71.6668 10.6332 73.942 8.28442 77.0937 8.28442C79.1075 8.28442 80.6189 9.14222 81.4385 10.7461C81.9789 11.8095 82.2037 13.0771 82.1654 14.5884H74.7616C74.8923 16.1364 75.8247 17.05 77.2789 17.05C78.473 17.05 79.2751 16.5095 79.6658 15.4461L82.2951 16.2113C81.512 18.3379 79.6658 19.5117 77.1851 19.5117C73.7541 19.5117 71.6641 17.385 71.6641 13.9907H71.6668ZM77.0937 10.6903C75.8441 10.6903 75.023 11.4174 74.7996 12.704H79.0885C79.0516 12.2942 78.9579 11.9769 78.8272 11.6787C78.5479 11.0443 77.8944 10.6903 77.0927 10.6903H77.0937Z" fill="#090A0B"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M89.393 8.30219C88.0313 8.30219 87.024 9.0115 86.3906 10.2982H86.3347V8.52677H83.2578V19.2503H86.354V13.525C86.354 11.4554 86.9502 10.9821 88.0326 10.9821C89.115 10.9821 89.9044 11.2384 89.9044 11.2384V8.30346H89.394L89.393 8.30219Z" fill="#090A0B"></path>
+                </g>
+                <defs>
+                    <clipPath id="clip0_1905_4826">
+                        <rect width="90" height="22.7586" fill="white" transform="translate(0 0.898987)"></rect>
+                    </clipPath>
+                    <clipPath id="clip1_1905_4826">
+                        <rect width="21.7241" height="21.7241" fill="white" transform="translate(0 1.65485)"></rect>
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <div style="margin: 5px 5px;">
+            <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 16px;background-color: rgba(61, 28, 110, 0.8);padding: 12px 12px;border: 0;">Clear Conversation</button>
+        </div>
+    </div>
+    <!--
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>Making online growth easy<br> for restaurants<br></h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Owner.com <a href="https://crescendocx.ai" target="_blank">CrescendoCX.AI</a> Bot</h2>
+            <div style="margin-bottom: 10px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 16px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            <div style="font-size: 16px;">Use Clear Conversation button to test a new conversation<br>as if with a different visitor</div>
+            <div style="margin-top: 20px;">
+                <button type="button" id="toggleBot" style="cursor: pointer; color: white; font-size: 26px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Show or Hide Bot</button>
+            </div>
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+    -->
+
+    <main class="main-wrapper">
+    <section section-full="" class="section_support-cards"><div class="padding-global"><div class="container-small"><div class="support_cards-wrap"><ul role="list" class="support_card-list"><li class="support_card-item"><div class="support_card-item-top"><div class="support_card-item-top_inner"><div class="text-color-brand"><p class="h18">24/7 Support for Customers</p></div><h2 class="h36">Contact Support</h2></div></div>
+        <div id="toggleBot" style="cursor:pointer; margin: 40px 40px;" href="https://help.owner.com/en/" target="_blank" class="button w-inline-block"><p>Chat Now!</p><div class="button_arrow"><div class="button_arrow-tail w-embed"><svg width="100%" height="100%" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L1 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg></div><div class="button_arrow-head w-embed"><svg width="100%" height="100%" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 1.5L5 6L1 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+        </svg></div></div></div>
+        <div class="support_card-item-bottom"><div class="support_card-item-bottom-inner"><div class="text-color-content-tertiary">
+        <p class="p15">Call support</p></div><div class="h20">(510) 630-2397</div></div><div class="support_card-item-bottom-inner is-last"><div class="text-color-content-tertiary"><p class="p15">Let us help</p></div><div class="h20">support@owner.com</div></div></div></li><li class="support_card-item"><div class="support_card-item-top"><div class="support_card-item-top_inner"><div class="text-color-content-tertiary"><p class="h18">Talk to our Sales team</p></div><h2 class="h36">Contact Sales</h2></div></div><div class="support_card-item-bottom"><div class="support_card-item-bottom-inner"><div class="text-color-content-tertiary"><p class="p15">Call sales</p></div><div class="h20">(213) 214-1506</div></div><div class="support_card-item-bottom-inner is-last"><div class="text-color-content-tertiary"><p class="p15">Talk to us</p></div><div class="h20">sales@owner.com</div></div></div></li></ul><div class="support_cards-bottom"><div class="margin-bottom margin-12"><div class="icon-embed-medium w-embed"><svg width="100%" height="100%" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.8346 9.33355C12.8346 6.75622 10.7453 4.66688 8.16798 4.66688C6.61254 4.66688 5.0571 4.66698 3.50166 4.66694C2.21286 4.66691 1.16798 5.71162 1.16797 7.00041C1.16794 11.667 1.16802 16.3337 1.16799 21.0003C1.16798 22.2889 2.21256 23.3336 3.50117 23.3336C5.72683 23.3336 7.95249 23.3335 10.1781 23.3335C10.7856 23.3335 11.3452 23.4797 11.812 23.7682C12.2305 24.0268 12.5806 24.3805 12.8346 24.799V9.33355Z" fill="#ACADAF"></path>
+        <path d="M15.168 24.799C15.4221 24.3805 15.7721 24.0268 16.1906 23.7682C16.6574 23.4797 17.217 23.3335 17.8245 23.3335C20.0501 23.3335 22.2757 23.3335 24.5013 23.3335C25.79 23.3335 26.8346 22.2889 26.8346 21.0002C26.8346 16.3336 26.8346 11.6669 26.8346 7.00032C26.8346 5.71159 25.7899 4.66689 24.5011 4.66691C22.9456 4.66693 21.3901 4.66688 19.8346 4.66688C17.2573 4.66688 15.168 6.75622 15.168 9.33355V24.799Z" fill="#ACADAF"></path>
+    </svg></div></div><div class="margin-bottom margin-24"><div class="max-width-460"><div class="text-align-center"><div class="text-color-content-secondary"><p class="h18">If you prefer to do things yourself, we’ve also got articles teaching you how to use your new system.</p></div></div></div></div><a href="https://help.owner.com/en/" target="_blank" class="button w-inline-block"><p>Explore Knowledge Base</p><div class="button_arrow"><div class="button_arrow-tail w-embed"><svg width="100%" height="100%" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 1L1 1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg></div><div class="button_arrow-head w-embed"><svg width="100%" height="100%" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1.5L5 6L1 10.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+    </svg></div></div></a></div></div></div></div></section>
+    </main>
+
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+
+    <style>
+        enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 180px;
+            --enegelai-bot-height-top-margin-sm: 0px;
+            --enegelai-bot-header-color: rgba(255, 250, 250, 0.9);
+            --enegelai-bot-header-background: rgba(1, 91, 248, 1);
+            --enegelai-bot-message-user-background: rgba(1, 91, 248, 0.8);
+            --enegelai-bot-anchor-background: rgba(1, 91, 248, 1);
+            --enegelai-bot-anchor-border-color: rgba(1, 91, 248, 1);
+            --enegelai-bot-popup-min-height: 50px;
+        }
+        enegelai-bot::part(header){
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30px;
+            background-origin: padding-box;
+        }
+
+        enegelai-bot::part(anchor){
+            font-size: 20px;
+        }
+
+        .cb-anchor{
+            background: var(--enegelai-bot-anchor-background);
+            border-color: var(--enegelai-bot-anchor-border-color);
+        }
+    </style>
+
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', 'Owner');
+            el.setAttribute('url', 'bot-service.enegel.ai');
+            el.setAttribute('org-id', 'owner');
+            el.setAttribute('bot-id', 'f9r5sxo8fu');
+            el.setAttribute('logo-svg', '<svg width="36" height="36" viewBox="0 0 204 204" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M102 204C158.333 204 204 158.333 204 102C204 45.667 158.333 0 102 0C45.667 0 0 45.667 0 102C0 158.333 45.667 204 102 204Z" fill="black"></path><g class="pin"><path fill-rule="evenodd" clip-rule="evenodd" d="M102 166C102 166 153 139.4 153 102C153 73.8335 130.167 51 102 51C73.8335 51 51 73.8335 51 102C51 139.4 102 166 102 166Z" fill="white"></path><circle cx="102" cy="102" r="24" fill="black"></circle></g></svg>');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+            const toggleBotBtn = document.querySelector('#toggleBot');
+            toggleBotBtn.addEventListener('click', (e) => {
+                console.log('Chat Now Clicked!');
+                chatBot.setOpen(true);
+            });
+
+        });
+    </script>
+
+    <style>
+        @media only screen and (max-width: 767px) {
+            :root {
+                --section--radius: 2.4rem;
+            }
+        }
+
+        /* ///////////////////// START OF GLOBAL EDITS ///////////////////// */
+        main:focus-visible {
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        /* --- Font Smoothing --- */
+        body {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Make sure containers never lose their center alignment*/
+        .container-medium, .container-small, .container-large {
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }
+
+    </style>
+
+</body>
+</html>
