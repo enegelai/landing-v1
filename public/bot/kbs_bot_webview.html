@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Kbs Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <!-- crescendo.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 140px;
+            --enegelai-bot-height-top-margin-sm: 0px;
+            --enegelai-bot-header-color: rgba(255, 255, 255, 0.9);
+            --enegelai-bot-header-background: rgba(61, 28, 110, 1);
+            --enegelai-bot-message-user-background: rgba(61, 28, 110, 0.8);
+            --enegelai-bot-anchor-background: rgba(124, 58, 237, 1);
+            --enegelai-bot-anchor-border-color: rgba(124, 58, 237, 1);
+            --enegelai-bot-popup-logo-color: rgba(61, 28, 110, 0.8);
+        }
+        enegelai-bot::part(header){
+            font-family: "Archivo Black", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 26px;
+        }
+
+        enegelai-bot::part(anchor) {
+            display: none;
+        }
+
+    </style>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', 'KBS');
+            el.setAttribute('url', 'bot-service.enegel.ai');
+            el.setAttribute('org-id', 'kbs');
+            el.setAttribute('bot-id', 'atfmenhrot');
+            el.setAttribute('always-open', 'true');
+            el.setAttribute('logo-svg', '<svg width="43" height="33" viewBox="0 0 434.719 331.09"><g fill="currentColor" data-name="Group 536"><path d="m128.363 170.664-8.272 8.272v29.889h-18.97v-87.132h18.971v36.287l35.845-36.287h22.5l-37.5 38.272 38.382 48.86h-21.838Z" data-name="Path 31"/><path d="M254.21 201.546c-4.411 4.412-10.919 7.279-20.293 7.279h-52.831v-87.131h49.192c9.374 0 16.213 2.757 20.184 6.617 3.529 3.419 5.514 8.6 5.514 14.889s-1.765 12.132-5.514 15.882a18.131 18.131 0 0 1-8.382 4.412c4.853.441 10.257 3.529 13.345 6.728 3.2 3.309 4.743 8.824 4.743 15 .003 6.617-2.207 12.574-5.958 16.324Zm-18.088-54.264a10.882 10.882 0 0 0-3.088-7.941c-1.876-1.654-4.743-2.316-8.382-2.316h-24.926v21.065h26.8a9.087 9.087 0 0 0 6.508-2.316c1.875-1.762 3.088-4.632 3.088-8.492Zm1.1 43.787c2.1-1.655 2.978-4.3 2.978-7.39 0-3.419-.881-6.4-3.2-8.272a13.312 13.312 0 0 0-8.383-2.536h-28.9v20.514h28.676c3.759-.001 6.848-.773 8.833-2.317Z" data-name="Path 32"/><path d="M341.346 183.679c0 15.771-12.463 26.36-37.5 26.36-26.361 0-35.845-7.941-39.376-18.97a37.124 37.124 0 0 1-1.212-8.934h19.632a15.448 15.448 0 0 0 1.214 5.515c2.426 5.074 8.161 7.279 19.743 7.279 13.235 0 17.867-3.64 17.867-9.375 0-7.169-3.64-9.705-17.758-12.352-2.536-.443-8.933-1.655-12.793-2.427-16.986-3.2-27.463-11.029-27.463-25.477 0-14.779 11.912-24.706 37.5-24.706 21.838 0 32.1 7.61 36.507 18.639a26.9 26.9 0 0 1 1.986 8.382h-19.634a12.207 12.207 0 0 0-1.212-4.3c-2.317-4.853-7.059-7.39-18.089-7.39-14.448 0-17.315 3.2-17.315 8.162 0 6.4 5.183 8.933 19.412 11.8 4.412.881 10.147 2.1 12.132 2.426 17.314 3.309 26.359 10.479 26.359 25.368Z" data-name="Path 33"/><path d="m396.292 175.063-169.47 127.13v28.9l207.9-156.083h-38.5Z" data-name="Path 34"/><path d="m38.426 175.063 169.471 127.13v28.9L-.001 175.007h38.5Z" data-name="Path 35"/><path d="M396.292 156.028 226.821 28.9V0l207.9 156.083h-38.5Z" data-name="Path 36"/><path d="M38.426 156.028 207.897 28.9V0L-.001 156.083h38.5Z" data-name="Path 37"/></g></svg>');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- crescendo.ai bot widget end -->
+</body>
+</html>
