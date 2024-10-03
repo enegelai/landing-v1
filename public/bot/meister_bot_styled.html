@@ -47,6 +47,15 @@
             --enegelai-bot-typing-color: rgb(61, 71, 77);
             --sl-focus-ring: solid 5px rgb(0, 170, 255);
         }
+        enegelai-bot::part(header){
+            position: relative;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Customize the shadow */
+        }
+        enegelai-bot::part(bot-message-list){
+            position: relative;
+            z-index: 10;
+        }
     </style>
     <script>
         (function() {
