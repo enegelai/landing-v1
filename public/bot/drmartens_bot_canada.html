@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Meister Crescendo Bot</title>
+</head>
+<body style="margin: 0;">
+    <div aria-hidden="true" style="margin-left: 40px; margin-top: 20px;">
+        <img src="https://www.drmartens.com/_ui/responsive/theme-dm/images/drm-logo-desktop.svg" alt="" itemprop="logo" height="64">
+    </div>
+    <div style="z-index: 10; color: black; text-align: center; width:100%; position: absolute; top:200px;left: 0px;">
+        <div style="font-family:Helvetica, Arial, sans-serif; font-size: 36px; margin-bottom: 50px;">
+            <h2>BOOTS LIKE NO OTHER</h2>
+        </div>
+        <div style="font-family:sans-serif; font-size: 22px;">
+            <h2>Dr. Martens CANADA <a href="https://crescendo.ai" target="_blank">Crescendo.AI</a> Bot</h2>
+            <div style="margin-bottom: 10px;">
+                <button type="button" id="clearConv" style="cursor: pointer; color: white; font-size: 16px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Clear Conversation</button>
+            </div>
+            <div style="font-size: 16px;">Use Clear Conversation button to test a new conversation<br>as if with a different visitor</div>
+            <div style="margin-top: 20px;">
+                <button type="button" id="toggleBot" style="cursor: pointer; color: white; font-size: 26px;background-color: rgb(6, 94, 255);padding: 12px 12px;border: 0;">Show or Hide Bot</button>
+            </div>
+        </div>
+    </div>
+    <img src="/img/whirl.svg" alt="" style="height: 100vh;position: absolute;top:0;right:0;opacity: 0.5;">
+
+    <!-- Enegel.ai bot widget begin -->
+    <link href="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
+    <style>
+        enegelai-bot {
+            --enegelai-bot-header-background: rgb(254, 219, 0);
+            --enegelai-bot-header-color: rgb(0, 0, 0);
+            --enegelai-bot-message-user-background: rgb(34, 34, 34);
+            --enegelai-bot-message-user-text-color: rgba(255, 255, 255, 1);
+            --enegelai-bot-anchor-background: rgb(254, 219, 0);
+            --enegelai-bot-anchor-border-color: rgb(254, 219, 0);
+            --enegelai-bot-anchor-color: rgb(0, 0, 0);
+            --enegelai-bot-form-submit-background: rgb(34, 34, 34);
+            --enegelai-bot-form-submit-border: rgb(34, 34, 34);
+            --enegelai-bot-popup-min-height: 60px;
+        }
+        enegelai-bot::part(header){
+            font-family: "Archivo Black", Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 26px;
+            position: relative;
+            z-index: 100;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Customize the shadow */
+        }
+        enegelai-bot::part(bot-message-list){
+            position: relative;
+            z-index: 10;
+        }
+        enegelai-bot::part(anchor) {
+            color: black;
+        }
+    </style>
+    <script>
+        (function() {
+            let el = document.createElement('enegelai-bot');
+            el.setAttribute('name', 'Dr. Martens');
+            el.setAttribute('url', 'bot-service.enegel.ai');
+            el.setAttribute('org-id', 'drmartens');
+            el.setAttribute('bot-id', 'qd7iz8p8b4');
+            el.setAttribute('logo-url', 'https://www.drmartens.com/_ui/responsive/theme-dm/images/drm-logo-desktop.svg');
+            document.body.appendChild(el);
+        })();
+    </script>
+    <!-- rgb() Enegel.ai bot widget end -->
+
+    <script>
+        window.addEventListener('load', () => {
+            const chatBot = document.querySelector('enegelai-bot');
+            const clearConvBtn = document.querySelector('#clearConv');
+            clearConvBtn.addEventListener('click', (e) => {
+                console.log('Clear conv clicked!');
+                chatBot.clearConversation();
+            });
+            const toggleBotBtn = document.querySelector('#toggleBot');
+            toggleBotBtn.addEventListener('click', (e) => {
+                //const isOpen = chatBot.getOpen();
+                //console.log(`Toggle Bot Clicked! open=${isOpen}`);
+                chatBot.toggleOpen();
+            });
+        });
+    </script>
+
+</body>
+</html>
