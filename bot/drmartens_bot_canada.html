@@ -32,6 +32,8 @@
     <script src="https://unpkg.com/@enegelai/bot-widget/dist/enegelaibot.umd.js" type="text/javascript" async></script>
     <style>
         enegelai-bot {
+            --enegelai-bot-max-height: 100vh;
+            --enegelai-bot-height-top-margin: 140px;
             --enegelai-bot-header-background: rgb(254, 219, 0);
             --enegelai-bot-header-color: rgb(0, 0, 0);
             --enegelai-bot-message-user-background: rgb(34, 34, 34);
@@ -55,9 +57,6 @@
         enegelai-bot::part(bot-message-list){
             position: relative;
             z-index: 10;
-        }
-        enegelai-bot::part(anchor) {
-            color: black;
         }
     </style>
     <script>
