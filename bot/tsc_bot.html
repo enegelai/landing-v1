@@ -58,11 +58,34 @@
     <!-- Enegel.ai bot widget end -->
 
     <script>
+
+        function subscribeToBotEvents() {
+            const chatBotElement = document.querySelector('enegelai-bot');
+
+            // Event "c7o:bot:conversationStart" is emitted when user sends the first message in the conversation
+            chatBotElement.addEventListener('c7o:bot:conversationStart', (event) => {
+                console.log(`Bot Event: c7o:bot:conversationStart - SEND TO SNOWFLAKE HERE`, event.detail);
+                // Expect object with the first user message in event.details:
+                /* {
+                      "timestamp": 1712354899770,
+                      "author": "user",
+                      "type": "text",
+                      "data": {
+                          "text": "I need new contract management system"
+                      },
+                      "id": "agrqk3td6c"
+                 } */
+            });
+        }
+
         window.addEventListener('load', () => {
+
+            subscribeToBotEvents();
+
             const chatBot = document.querySelector('enegelai-bot');
             const clearConvBtn = document.querySelector('#clearConv');
             clearConvBtn.addEventListener('click', (e) => {
-                console.log('Clear conv clicked!');
+                console.log('Clear conversation clicked');
                 chatBot.clearConversation();
             });
         });
