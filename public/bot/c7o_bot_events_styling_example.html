@@ -61,7 +61,7 @@
             el.setAttribute('url', 'bot-service.enegel.ai');
             el.setAttribute('org-id', 'c7o');
             el.setAttribute('bot-id', 'ow2gj743xv');
-            el.setAttribute('logo-url', 'https://www.crescendocx.ai/img/logo.jpg');
+            el.setAttribute('logo-url', 'https://storage.googleapis.com/c7o-16zv0f3uuu-cdn/logo.jpg');
             document.body.appendChild(el);
         })();
     </script>
@@ -71,6 +71,10 @@
 
         function subscribeToBotEvents(){
             const chatBotElement = document.querySelector('enegelai-bot');
+
+            chatBotElement.addEventListener('message:send', (event) => {
+                console.log(`**** Bot Event message:send ****: message:send`, event.detail);
+            });
 
             // Event "c7o:bot:botInitialized" is emitted when bot is initialized
             chatBotElement.addEventListener('c7o:bot:botInitialized',(event)=> {
